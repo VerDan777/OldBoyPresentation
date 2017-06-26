@@ -1,0 +1,19 @@
+.text {
+
+    &__title {
+        text-align: center;
+        background-color:$accent;   
+        padding:15px 15%;
+        margin-top:100px;
+        font-family: 'Ubuntu',sans-serif;
+        color:#000000;
+        display: inline-block;
+        font-size: 2rem;
+        
+       
+    }
+    &__text {
+       
+    }
+
+}
