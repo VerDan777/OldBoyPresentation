@@ -1,31 +1,28 @@
-const gulp =require('gulp');
-const watch= require('gulp-watch');
-const BrowserSync =require('browser-sync');
+const gulp = require('gulp');
+const watch = require('gulp-watch');
+const browserSync = require('browser-sync').create();
 
-gulp.task('watch',function() {
-    BrowserSync.init ({
-        server:{
-            baseDir:'dist'
+gulp.task('watch', function() {
+    browserSync.init({
+        server: {
+            baseDir: 'dist'
         }
-
     });
     
-    watch('./src/**/*.pug',function() {
+    watch('./src/**/*.pug', function() {
         gulp.start('pugChanged');
     });
-    
-    watch('./src/sass/**/*.scss',function() {
-        gulp.start('cssInject')
-    });
 
-    gulp.task('PugChanged',['pugRender'],function() {
-        BrowserSync.reload();
+    watch('./src/sass/**/*.scss', function() {
+        gulp.start('cssInject');
     })
-    gulp.task('CssInject',['styles'],function() {
-        gulp.src('./dist/styles.css')
-            .pipe(BrowserSync.stream());
-    })
+});
 
+gulp.task('pugChanged', ['pugRender'], function() {
+    browserSync.reload();
+});
 
-
+gulp.task('cssInject', ['sass'], function() {
+    gulp.src('./dist/styles.css')
+        .pipe(browserSync.stream());
 })
