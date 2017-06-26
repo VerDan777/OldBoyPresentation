@@ -26,14 +26,26 @@
              &--why {
         font-size: 3rem;
            padding-top:100px;
+
         
+       }
+       span {
+           background: $accent;
+           color:#000000;
+           font-weight: 100;
        }
        &--why--preference {
            color:$accent;
            font-size: 2.5rem;
            padding-top:100px;
        }
+       &--center {
 
+           color:$accent;
+        //    text-transform: uppercase;
+           font-size: 6rem;
+
+       }
    
     
     }

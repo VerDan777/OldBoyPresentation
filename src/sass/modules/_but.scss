@@ -1,0 +1,23 @@
+.but {
+    text-align: center;
+    background-image: url('./img/butbg.jpg');
+    height:100%;;
+    width:100%;
+    top:0;
+    left:0;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+
+    &::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    }
+}
