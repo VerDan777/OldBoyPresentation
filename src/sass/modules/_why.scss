@@ -1,0 +1,22 @@
+.why {
+    background-image: url('./img/whybg.png');
+    height:100%;;
+    width:100%;
+    top:0;
+    left:0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+    text-align: center;
+
+    &::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    }
+}

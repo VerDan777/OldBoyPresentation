@@ -1,19 +1,41 @@
 .text {
-
+    text-align: center;
     &__title {
         text-align: center;
         background-color:$accent;   
         padding:15px 15%;
-        margin-top:100px;
+        margin-top:20px;
         font-family: 'Ubuntu',sans-serif;
         color:#000000;
+        font-weight: bold;
         display: inline-block;
         font-size: 2rem;
+           &--why {
+        font-size: 2rem;
+       }
         
        
     }
     &__text {
-       
+       text-align: center;
+       font-family: 'Ubuntu',sans-serif;
+       display: inline-block;
+       font-size: 4rem;
+       color:white;
+       padding-bottom: 15px;
+             &--why {
+        font-size: 3rem;
+           padding-top:100px;
+        
+       }
+       &--why--preference {
+           color:$accent;
+           font-size: 2.5rem;
+           padding-top:100px;
+       }
+
+   
+    
     }
 
 }
