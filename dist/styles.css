@@ -452,6 +452,28 @@ ul {
   text-align: center; }
   .text__title {
     text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    display: inline-block;
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 15px; }
+    .text__title--why {
+      font-size: 3rem;
+      padding-top: 100px; }
+    .text__title--center {
+      color: #ff9800;
+      font-size: 6rem; }
+    .text__title--big {
+      font-size: 7rem; }
+    .text__title--left {
+      text-align: left;
+      font-size: 3.5rem;
+      font-weight: 200; }
+    .text__title--prim {
+      font-size: 2rem;
+      text-align: left; }
+  .text__text {
+    text-align: center;
     background-color: #ff9800;
     padding: 15px 15%;
     margin-top: 20px;
@@ -460,15 +482,6 @@ ul {
     font-weight: bold;
     display: inline-block;
     font-size: 2rem; }
-    .text__title--why {
-      font-size: 2rem; }
-  .text__text {
-    text-align: center;
-    font-family: 'Ubuntu',sans-serif;
-    display: inline-block;
-    font-size: 4rem;
-    color: white;
-    padding-bottom: 15px; }
     .text__text--why {
       font-size: 3rem;
       padding-top: 100px; }
@@ -479,10 +492,9 @@ ul {
     .text__text--why--preference {
       color: #ff9800;
       font-size: 2.5rem;
-      padding-top: 100px; }
-    .text__text--center {
-      color: #ff9800;
-      font-size: 6rem; }
+      padding-top: 100px;
+      background: none;
+      font-weight: bold; }
 
 .logo {
   text-align: center;
@@ -531,3 +543,24 @@ ul {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2); }
+
+.price {
+  background-image: url("./img/pricebg.jpg");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  .price::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.8; }
