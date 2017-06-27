@@ -1,4 +1,12 @@
 .number  {
     display: inline-block;
-    
+    position: absolute;
+    left:0;
+    color:white;
+    border:22px solid orange;
+    border-left: none;
+    padding:50px 50px;
+    font-size: 5rem;
+    font-family: 'Ubuntu',sans-serif;
+    top:30px;
 }

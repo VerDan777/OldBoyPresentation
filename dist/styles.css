@@ -471,6 +471,8 @@ ul {
       font-size: 2.5rem; }
     .text__title--big {
       font-size: 7rem; }
+    .text__title--bold {
+      font-size: 5rem; }
     .text__title--left {
       text-align: left;
       font-size: 3.5rem;
@@ -502,6 +504,10 @@ ul {
       padding-top: 100px;
       background: none;
       font-weight: bold; }
+    .text__text--left {
+      text-align: left;
+      font-size: 2.65rem;
+      font-weight: 200; }
 
 .logo {
   text-align: center;
@@ -549,7 +555,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); }
+    background: rgba(0, 0, 0, 0.2); }
 
 .price {
   background-image: url("./img/pricebg.jpg");
@@ -614,4 +620,136 @@ ul {
     background: rgba(0, 0, 0, 0.2); }
 
 .number {
-  display: inline-block; }
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  color: white;
+  border: 22px solid orange;
+  border-left: none;
+  padding: 50px 50px;
+  font-size: 5rem;
+  font-family: 'Ubuntu',sans-serif;
+  top: 30px; }
+
+.contract {
+  background-image: url("./img/contractbg.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  .contract::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); }
+
+.search-room {
+  background-image: url("./img/search-roombg.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  .search-room::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.8; }
+
+.design {
+  background-image: url("./img/designbg.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  .design::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.8; }
+
+.build {
+  text-align: center;
+  background-image: url("./img/buildbg.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  .build::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); }
+
+.brand {
+  background-image: url("./img/brandbg.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  .brand::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); }
+
+.equipment {
+  background-image: url("./img/equipmentbg.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  .equipment::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); }
