@@ -43,7 +43,7 @@
     &__text {
 
         // background-color:$accent;   
-        padding:15px 10%;
+        padding:15px 0%;
         margin-top:20px;
         font-family: 'Ubuntu',sans-serif;
         color:#000000;
@@ -75,6 +75,9 @@
            text-align: left;
            font-size: 2.65rem;
            font-weight: 200;
+       }
+       &--bg {
+           font-size: 4rem;
        }
  
    
