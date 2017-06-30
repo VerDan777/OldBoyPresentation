@@ -1,0 +1,24 @@
+.features {
+
+    &__list {
+
+        display: inline-block;
+
+    }
+    &__item {
+
+
+    }
+    &__title {
+        color:#ff9800;
+        font-family: 'Ubuntu',sans-serif;
+        font-size: 2rem;
+    }
+
+    &__desc {
+        font-family: 'Ubuntu',sans-serif;
+        color:white;
+        
+    }
+    
+}

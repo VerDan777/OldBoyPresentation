@@ -418,6 +418,8 @@ ul {
 .wrapper {
   margin: 0 auto;
   width: 1170px; }
+  .wrapper--big {
+    width: 1400px; }
 
 .section {
   height: 100vh;
@@ -473,6 +475,8 @@ ul {
       font-size: 7rem; }
     .text__title--bold {
       font-size: 5rem; }
+    .text__title--boldsubtitle {
+      font-size: 4rem; }
     .text__title--left {
       text-align: left;
       font-size: 3.5rem;
@@ -876,3 +880,53 @@ ul {
     width: 100%;
     height: 100%;
     background-color: rgba(22, 22, 32, 0.4); }
+
+.design-examples {
+  text-align: center;
+  background: #161620;
+  width: 100%;
+  height: 110vh; }
+
+.gallery {
+  display: inline-block;
+  align-content: flex-start; }
+  .gallery__img {
+    width: 400px;
+    height: 400px; }
+  .gallery img {
+    height: 30%;
+    width: 30%;
+    padding: 0 15px; }
+
+.advantages {
+  background-image: url("./img/advantagesbg.jpg");
+  height: 145%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  ы
+.advantages::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 22, 32, 0.5); }
+
+.features__list {
+  display: inline-block; }
+
+.features__title {
+  color: #ff9800;
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 2rem; }
+
+.features__desc {
+  font-family: 'Ubuntu',sans-serif;
+  color: white; }
