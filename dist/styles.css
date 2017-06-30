@@ -909,8 +909,7 @@ ul {
   background-repeat: no-repeat;
   position: relative;
   text-align: center; }
-  ы
-.advantages::after {
+  .advantages::after {
     content: '';
     position: absolute;
     top: 0;
@@ -922,11 +921,34 @@ ul {
 .features__list {
   display: inline-block; }
 
+.features__item {
+  display: inline-block; }
+
 .features__title {
   color: #ff9800;
   font-family: 'Ubuntu',sans-serif;
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 .features__desc {
   font-family: 'Ubuntu',sans-serif;
   color: white; }
+
+.need {
+  background-image: url("./img/needbg.jpg");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center; }
+  .need::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); }
