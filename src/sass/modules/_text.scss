@@ -1,22 +1,31 @@
 .text {
     text-align: center;
     &__title {
-        text-align: center;
+
+       text-align: center;
        font-family: 'Ubuntu',sans-serif;
        display: inline-block;
        font-size: 4rem;
        color:white;
        padding-bottom: 15px;
+
+   
   
             &--why {
         font-size: 3rem;
            padding-top:100px;
         
-    }
+}
+
+        &--arrow {
+            position: relative;
+        }
+      
           &--center {
 
            color:$accent;
            font-size: 6rem;
+           margin:2% 0;
        }
        &--orangebg {
            background: $accent;
@@ -41,20 +50,32 @@
            font-size: 2rem;
            text-align: left;
        }
+       &--underline {
 
+        &::after {
+            content: '';
+            height: 10px;
+            display: block;
+            width: 150px;
+            background: $accent;
+            margin: 15px auto;
+           
+       }
+
+    }
     }
     &__text {
 
         // background-color:$accent;   
         padding:15px 0%;
         margin-top:20px;
+        margin-left: 100px; 
         font-family: 'Ubuntu',sans-serif;
-        color:#000000;
         font-weight: bold;
         font-size: 3rem;
         text-align: center;
         display: inline-block;
-        color:white;ß
+        color:white;
 
              &--why {
         font-size: 3rem;
@@ -82,9 +103,11 @@
        &--bg {
            font-size: 4rem;
        }
+       
  
    
     
     }
+
 
 }
