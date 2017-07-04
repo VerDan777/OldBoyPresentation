@@ -7,209 +7,286 @@ head
     link(rel="stylesheet", href="styles.css")
     link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
     title Document
-body
-    section.section.header: .wrapper
-        .logo: img(src="./img/logo.png")
-        h2.header__title Открой свою мужскую парикмахерскую
-        h3.text__title.text__title--center.text__title--orangebg  и начни зарабатывать от 250 тыс. рублей в месяц
-    
-    section.section.why: .wrapper
-        h3.text__title.text__title--why Наверняка вы читаете эту презентацию  не от безделья а потому что хотите открыть собственный бизнес , который должен быть в первую очередь доходным и конечно же интересным. 
-        h3.text__text Мы уверены,что мы - лучшие!
-        br
-        h3.text__title Почему?
-        br
-        h3.text__text.text__text--why-preference.text__text--why--preference А вот почему, мы Вам сейчас и расскажем
-    
-    section.section.but: .wrapper 
-        h1.text__title.text__title--center Но!
-      
-        h3.text__title В начале, давайте договоримся, что мы будем рассказывать <span>все условия честно</span> и без преувеличения, без использования шаблонов и дешёвых обещаний.
-        h3.text__title Будем рассказывать все понятно и на русском человеческом языке.
+body    
+    .parallax
+        section.section
+            .parallax__layer
+                img(src="./img/headerbg.png")
+                .content
+                    .logo: img(src="./img/logo.png")
+                    h2.header__title Открой свою мужскую парикмахерскую
+                    h3.text__title.text__title--center.text__title--orangebg  и начни зарабатывать от 250 тыс. рублей в месяц
+            
+        section.section
+                .parallax__layer
+                    img(src="./img/whybg.png")
+                .parallax__layer
+                .content
+                    h3.texts__title.text__title--why Наверняка вы читаете эту презентацию  не от безделья а потому что хотите открыть собственный бизнес , который должен быть в первую очередь доходным и конечно же интересным. 
+                    h3.text__text Мы уверены,что мы - лучшие!
+                    br
+                    h3.text__title Почему?
+                    br
+                    h3.text__text.text__text--why-preference.text__text--why--preference А вот почему, мы Вам сейчас и расскажем
 
-    section.section.price: .wrapper 
-        h3.text__title Начнем прямо сейчас и сразу!
-        h3.text__title.text__title--underline  Стоимость франшизы 
-        br
-        p.text__title «OldBoy Barbershop» (паушальный взнос) 
-        .arrow
-                i.fa.fa-chevron-down.arrow__arrow(aria-hidden="true" style="width:200px")
-        h3.text__title.text__title--big  <span>400</span> тыс. рублей
-        p.text__title.text__title--left +100 тыс. рублей для города миллионика
-        p.text__title.text__title--left +100 тыс. рублей за эксклюзив на город
-        br
-        p.text__title.text__title--prim (никто, кроме Вас , в городе открыть OldBoy не сможет)
-    
-    section.section.sum: .wrapper
-        h3.text__title Что входит в эту сумму?
-        h3.text__text.text__text--plain Взнос включает в себя в совокупности все расходы с нашей стороны, которые мы понесем <span>для успешного открытия Вашего</span> «OldBoy Barbershop».
-        p.text__text.text__text--why--preference А теперь более конкретно
+        section.section
+            .shadow
+                img(src="./img/butbg.jpg")
+            .content
+                    h1.text__title.text__title--center Но!
+                    h3.text__title В начале, давайте договоримся, что мы будем рассказывать <span>все условия честно</span> и без преувеличения, без использования шаблонов и дешёвых обещаний.
+                    h3.text__title Будем рассказывать все понятно и на русском человеческом языке.
 
-    section.section.stages: .wrapper
-        h3.text__title Этапы открытия Вашего  
-        br 
-        h3.text__title  «OldBoy Barbershop»
-        .arrow
-            i.fa.fa-chevron-down.arrow__arrow(aria-hidden="true" style="width:200px")
-    
-    section.section.contract: .wrapper  
-        h3.number 1
-        h3.text__title.text__title--bold Подписание договора
-        p.text__text.text__text--left Договор обычно заключается дистанционно. Если же Вы решите прилететь к нам в город (управляющая компания находится в г. Калининград), мы организуем Вам чартер и экскурсию по нашим OldBoy - покажем Вам как работает бизнес изнутри.Договор заключаем как и на физические, так и на юридические лицДалее, у вас всегда будет на связи юрист от нашей команды, кото 
-    
-    section.section.search-room: .wrapper
-        h3.number 2
-        h3.text__title.text__title--bold Поиск помещения
-        p.text__text.text__text--left Мы даем критерии для поиска помещения в Вашем городе и всячески  содействуем Вам в его подборе.Основатель сети «OldBoy Barbershop» вместе с дизайнерами будет оценивать  каждый предложенный вариант, и давать Вам обоснованную оценку по рентабельности  помещения, взвешивая все плюсы и минусы.
-    
-    section.section.design: .wrapper
-        h3.number 3 
-        h3.text__title.text__title--bold Создание дизайн-проекта
-        p.text__text.text__text--left.text__text--small  После утверждения помещения, наша команда дизайнеров разрабатывает дизайн - проект. Это не просто дизайнеры, это специалисты, которые сделали более полусотни дизайнов барбершопа и знают все тонкости от правильного расположения розеток до таких тонких моментов, как направление света, расстояние между креслами и так далее.Дизайн делается от 5 до 7 рабочих дней. Вы будете принимать комплексное участие в процессе, всегда поддерживая связь с дизайнерами. Мы сохраним Ваши пожелания, используя корпоративный стиль компании.
-    
-    section.section.design-examples: .wrapper--big
-        h3.text__title.text__title--bold Примеры дизайн-проекта
-        .gallery
-                a.gallery__link: img.gallery__img(src='./img/gallery1.png')
-                a.gallery__link: img.gallery__img(src='./img/gallery2.png')
-                a.gallery__link: img.gallery__img(src='./img/gallery3.png')
-                a.gallery__link: img.gallery__img(src='./img/gallery3.png')
-                a.gallery__link: img.gallery__img(src='./img/gallery3.png')
-
-
-
-    section.section.build: .wrapper
-        h3.number 4 
-        h3.text__title.text__title--bold Ремонт помещения
-        p.text__text.text__text--left  После получения дизайн проекта, в котором будут все электросхемы и цветные отрисовки дизайна, включая материалы, Вам нужно будет согласовать и начать ремонт помещения с рабочей бригадой, которую находите Вы в своем регионе.
-    
-    section.section.brand: .wrapper
-        h3.number 5
-        h3.text__title.text__title--bold Передача брэнда
-        p.text__text.text__text--left Мы скидываем вам полностью бренд - пак от визиток до подарочных сертификатов, а так же руководство к открытию, в котором будут всевозможные поставщики от элементов декора до эксклюзивной косметики. От программы обработки фотографии для соц. сетей, до текста, с помощью которого подать объявление о поиске администратора на Avito.
-
-    section.section.equipment: .wrapper 
-        h3.number 6
-        h3.text__title.text__title--bold Закупка оборудования 
-        p.text__text.text__text--left  Далее, Вам позвонят наши проверенные поставщики по оборудованию и инструменту. Мы не выступаем третьими лицами, накручивая наценку на товар.<br>Товар Вы покупаете напрямую, используя наши максимальные скидки. Мы не ограничиваем Вас в выборе продавца, а лишь даем рекомендации. Если Вы вдруг найдете варианты дешевле (мы сомневаемся в этом), то Вы можете купить все самостоятельно.
-
-    section.section.CRM: .wrapper
-        h3.number 7
-        h3.text__title.text__title--bold Подключение CRM  и онлайн-записи
-        p.text__text.text__text--left Мы подключаем Вам и вашему Барбершопу мобильное приложение, СRМ систему учёта, и онлайн запись. Вы всегда сможете через телефон контролировать сумму в кассе, количество записей клиентов и проданный товар.CRM система учёта полностью исключает  возможность воровства сотрудников. Мы за свой счёт оплачиваем аб. плату СRМ системы и несём все расходы на поддержку онлайн сервисов (моб. приложение, сайт).
-
-    section.section.masters: .wrapper
-        h3.number 8
-        h3.text__title.text__title--bold Поиск мастеров
-        p.text__text.text__text--left Мы начинаем заниматься поиском мастеров в Вашем городе, делаем это самостоятельно и всю ответственность берем на себя. Мы ищем мастеров через социальные сети, по объявлениям, вытягиваем домушников, переманиваем мастеров из других барбершопов и т.д. Ведем переговоры и обмениваемся информацией. Мастеров мы будем искать только опытных и имеющих стаж по работе с мужскими стрижками. Мы их найдем в любом по величине городе, это мы можем гарантировать.
-
-    section.section.advertising: .wrapper 
-        h3.number 9
-        h3.text__title.text__title--bold Реклама в соц. сетях
-        p.text__text.text__text--left Далее, наша команда начинает раскручивать Вас в социальных сетях самостоятельно, не отвлекая Вас. Мы занимаемся группой ВКонтакте и Instagram аккаунтом. Мы самостоятельно разогреваем ажиотаж о готовящемся открытии «OldBoy Barbershop» в Вашем городе. Выкладываем фото, пишем информацию, занимаемся целевой рекламой в социальных сетях. Это значительно экономит Ваше время. 
-
-    section.section.open: .wrapper 
-        h3.number 10
-        h3.text__title.text__title--bold Обучение мастеров и открытие 
-        p.text__text.text__text--left Мы вылетаем к Вам в город в составе ведущего специалиста, обладающего статусом технолога American Crew, и основателя OldBoy. Живем у Вас в городе, проводим кастинги по мастерам, мастер классы и, конечно же, передаем философию OldBoy. Общение по обмену опытом и технологии опасного бритья, а так же семинар правильного использования мужской косметики. Мы поможем Вам провести открытие, пострижем Ваших клиентов на открытии и конечно же создадим правильную атмосферу. 
-
-    section.section.need: .wrapper 
-        h3.text__title.text__title--bold.text__title--underline Для этого потребуется 
-
-        .features
-            ul.features__list 
-                li.features__item
-                    img(src="./img/features/city-feature.png")
-                    h4.features__title Помещение
-                    p.features__desc для барбершопа от 35 до 70 м
-                
-                li.features__item
-                    img(src="./img/features/wallet-feature.png")
-                    h4.features__title Инвестиции 
-                    p.features__desc 1000-1150 тыс. рублей (ремонтные работы, оборудование, косметика и открытие, включая все дополнительные расходы )
-
-                li.features__item
-                    img(src="./img/features/time-feature.png")
-                    h4.features__title Время 
-                    p.features__desc для открытия от 35 до 45 дней 
-                li.features__item--total
-                    p.features__desc Для Москвы и Санкт-Петербурга эта сумма будет 1250-1400 тыс. рублей
-
-    section.section.design-examples: .wrapper--big
-        h3.text__title.text__title--bold Как будет выглядеть ваш барбершоп
-        .gallery
-                a.gallery__link: img.gallery__img--pdonone(src='./img/barbers1.png')
-                a.gallery__link: img.gallery__img--pdonone(src='./img/barber2.jpg')
-                a.gallery__link: img.gallery__img--pdonone(src='./img/barber3.jpg')
-                a.gallery__link: img.gallery__img--pdonone.gallery__img--big(src='./img/barbersbig.jpg')
-
-    section.section.design-examples: .wrapper--big
-        .gallery
-                a.gallery__link: img.gallery__img--full(src='./img/barbers1.png')
-                a.gallery__link: img.gallery__img--full(src='./img/barber2.jpg')
-                a.gallery__link: img.gallery__img--full(src='./img/barber3.jpg')
-                a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
-                a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
-                a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
-                a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
-                a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
-
-
-
-
-    
-    section.section.advantages: .wrapper
-        h3.text__title.text__title--bold.text__title--underline Преимущества 
-        h3.text__title.text__title--boldsuptitle франшизы «OldBoy Barbershop» 
-        .features
-            ul.features__list
-                li.features__item
-                    img(src="./img/features/features1.png")
-                    h4.features__title Экслюзивный дизайн 
-                    p.features__desc неповторимая атмосфера брутального барбершопа
-                li.features__item
-                    img(src="./img/features/open-feature.jpg")
-                    h4.features__title Ни одной закрывшейся точки 
-                    p.features__desc (из 65 на 6 мая 2017)
-
-                li.features__item
-                    img(src="./img/features/loayal-feature.png")
-                    h4.features__title Самый лояльный роялти 
-                    p.features__desc всего 5%
-
-                li.features__item
-                    img(src="./img/features/creme-feature.png")
-                    h4.features__title Собственное производство 
-                    p.features__desc мужской косметики 
-                li.features__item
-                    img(src="./img/features/tatoo-feature.png")
-                    h4.features__title Тату-студия
-                    p.features__desc Без ваших вложений (по желанию)
-
-    section.section.support: .wrapper 
-        h3.text__title.text__title--bold.text__title--underline О нашей поддержке 
-        p.text__text Наша поддержка — <span>это поддержка во всем.</span> Это специальный штат профессионалов состоящий из дизайнеров, юристов, маркетологов, IT-программистов, которые работают 5 дней в неделю специально для Вас!
-        p.text__text Например, через год, после того как состоялось открытие, Вы решите сделать баннер на какое-нибудь мероприятие, или Вам потребуется помощь юриста, дизайнера, то Вы просто обращаетесь к нам и получаете это совершенно бесплатно, и, самое главное, в короткий срок.
-        p.text__text Помимо всего этого у Вас будет персональный менеджер для решения любых вопросов, связанных с работой парикмахерской.
-    
-    section.section.end: .wrapper
-        p.text__text Если в вашем городе еще нет барбершопа OldBoy, то это лишь вопрос времени!  
-        p.text__text Возможно, в этот самый момент твой (перейдём на ты?) сосед или друг.... а может даже враг читает эту же презентацию и уже звонит нам. А чего ждёшь ты?
-        p.text__title.text__title--center  Звони сейчас
-        br
-        p.text__text.text__text--bg +7 952 794 78 36
-        br
-        p.text__text.text__text--bg  Владислав
-        br
-        p.text__text  менеджер по развитию франчайзинговой сети барбершопов OldBoy
-    
-
-
-
-
-
-
-
+        section.section 
+            .shadow
+                img(src="/img/pricebg.jpg")   
+            .content 
+                    h3.text__title Начнем прямо сейчас и сразу!
+                    h3.text__title.text__title--underline  Стоимость франшизы 
+                    br
+                    p.text__title «OldBoy Barbershop» (паушальный взнос) 
+                    .arrow
+                            i.fa.fa-chevron-down.arrow__arrow(aria-hidden="true" style="width:200px")
+                    h3.text__title.text__title--big  <span>400</span> тыс. рублей
+                    p.text__title.text__title--left +100 тыс. рублей для города миллионика
+                    p.text__title.text__title--left +100 тыс. рублей за эксклюзив на город
+                    br
+                    p.text__title.text__title--prim (никто, кроме Вас , в городе открыть OldBoy не сможет)
         
+        section.section
+            .shadow
+                img(src="./img/sumbg.png")
+            .content
+                h3.text__title Что входит в эту сумму?
+                h3.text__text.text__text--plain Взнос включает в себя в совокупности все расходы с нашей стороны, которые мы понесем <span>для успешного открытия Вашего</span> «OldBoy Barbershop».
+                p.text__text.text__text--why--preference А теперь более конкретно
+
+        section.section
+            .shadow
+                img(src="./img/stagesbg.png")
+            .content
+                h3.text__title Этапы открытия Вашего  
+                |
+                h3.text__title  «OldBoy Barbershop»
+                .arrow
+                    i.fa.fa-chevron-down.arrow__arrow(aria-hidden="true" style="width:200px")
+            
+        section.section 
+            .shadow
+                img(src="./img/contractbg.png")
+            .content
+                h3.number 1
+                h3.text__title.text__title--bold Подписание договора
+                p.text__text.text__text--left Договор обычно заключается дистанционно. Если же Вы решите прилететь к нам в город (управляющая компания находится в г. Калининград), мы организуем Вам чартер и экскурсию по нашим OldBoy - покажем Вам как работает бизнес изнутри.Договор заключаем как и на физические, так и на юридические лицДалее, у вас всегда будет на связи юрист от нашей команды, кото 
+            
+        section.section.search-room: .wrapper
+            .shadow
+                img(src="./img/seacrh-roombg.png")
+            .content
+                h3.number 2
+                h3.text__title.text__title--bold Поиск помещения
+                p.text__text.text__text--left Мы даем критерии для поиска помещения в Вашем городе и всячески  содействуем Вам в его подборе.Основатель сети «OldBoy Barbershop» вместе с дизайнерами будет оценивать  каждый предложенный вариант, и давать Вам обоснованную оценку по рентабельности  помещения, взвешивая все плюсы и минусы.
+        
+        section.section
+            .shadow
+                img(src="./img/designbg.png")
+            .content
+                h3.number 3 
+                h3.text__title.text__title--bold Создание дизайн-проекта
+                p.text__text.text__text--left.text__text--small  После утверждения помещения, наша команда дизайнеров разрабатывает дизайн - проект. Это не просто дизайнеры, это специалисты, которые сделали более полусотни дизайнов барбершопа и знают все тонкости от правильного расположения розеток до таких тонких моментов, как направление света, расстояние между креслами и так далее.Дизайн делается от 5 до 7 рабочих дней. Вы будете принимать комплексное участие в процессе, всегда поддерживая связь с дизайнерами. Мы сохраним Ваши пожелания, используя корпоративный стиль компании.
+        
+        
+        section.section.section--color
+            .content
+                h3.text__title.text__title--bold Примеры дизайн-проекта
+                .gallery
+                        a.gallery__link: img.gallery__img(src='./img/gallery1.png')
+                        a.gallery__link: img.gallery__img(src='./img/gallery2.png')
+                        a.gallery__link: img.gallery__img(src='./img/gallery3.png')
+                        a.gallery__link: img.gallery__img(src='./img/gallery3.png')
+                        a.gallery__link: img.gallery__img(src='./img/gallery3.png')
+
+
+
+
+        section.section
+            .shadow
+                img(src="./img/buildbg.png")
+            .content
+                h3.number 4 
+                h3.text__title.text__title--bold Ремонт помещения
+                p.text__text.text__text--left  После получения дизайн проекта, в котором будут все электросхемы и цветные отрисовки дизайна, включая материалы, Вам нужно будет согласовать и начать ремонт помещения с рабочей бригадой, которую находите Вы в своем регионе.
+            
+        section.section
+            .shadow
+                img(src="./img/brandbg.png")
+            .content
+                h3.number 5
+                h3.text__title.text__title--bold Передача брэнда
+                p.text__text.text__text--left Мы скидываем вам полностью бренд - пак от визиток до подарочных сертификатов, а так же руководство к открытию, в котором будут всевозможные поставщики от элементов декора до эксклюзивной косметики. От программы обработки фотографии для соц. сетей, до текста, с помощью которого подать объявление о поиске администратора на Avito.
+
+        section.section
+            .shadow
+                img(src="./img/equipmentbg.png")
+            .content
+                h3.number 6
+                h3.text__title.text__title--bold Закупка оборудования 
+                p.text__text.text__text--left  Далее, Вам позвонят наши проверенные поставщики по оборудованию и инструменту. Мы не выступаем третьими лицами, накручивая наценку на товар.<br>Товар Вы покупаете напрямую, используя наши максимальные скидки. Мы не ограничиваем Вас в выборе продавца, а лишь даем рекомендации. Если Вы вдруг найдете варианты дешевле (мы сомневаемся в этом), то Вы можете купить все самостоятельно.
+
+        section.section
+            .shadow
+                img(src="./img/crmbg.png")
+            .content
+                h3.number 7
+                h3.text__title.text__title--bold Подключение CRM  и онлайн-записи
+                p.text__text.text__text--left Мы подключаем Вам и вашему Барбершопу мобильное приложение, СRМ систему учёта, и онлайн запись. Вы всегда сможете через телефон контролировать сумму в кассе, количество записей клиентов и проданный товар.CRM система учёта полностью исключает  возможность воровства сотрудников. Мы за свой счёт оплачиваем аб. плату СRМ системы и несём все расходы на поддержку онлайн сервисов (моб. приложение, сайт).
+
+        section.section
+            .shadow
+                img(src="./img/managebg.jpg")
+            .content
+                h3.text__title Управляйте барбершопом с телефона
+                p.text__text Наши барбершопы полностью автоматизированы:
+                .barbershop-feature
+                    ul.barbershop-feature__list
+                    mixin feature(text,imgURL)
+                            li.barbershop-feature__item=text
+                                img.barbershop-feature__img(src=imgURL)
+                    +feature('Клиентская база со статистикой и историей посещений.Помогает не терять постоянных клиентов.','./img/features/dbfeature.png')
+                    +feature('Электронный журнал записи клиентов, с функцией SMS и E-mail напоминаний, что уменьшает количество опоздавших на стрижку.','./img/docsfeature.png')
+                    +feature('Онлайн запись помогает не упускать новых клиентов и облегчает работу администратора.','./img/onlinefeature.png')
+                    +feature('Мобильное прииложение с онлайн-записью.Более 45% клиентов делают запись через мобильное приложение','./img/mobilefeature.png')
+                    +feature('Полная статистика, чтобы знать ключевые показатели бизнеса.','./img/graphfeature.png')
+                    
+
+        section.section
+            .shadow
+                img(src="./img/mastersbg.png")
+            .content
+                h3.number 8
+                h3.text__title.text__title--bold Поиск мастеров
+                p.text__text.text__text--left Мы начинаем заниматься поиском мастеров в Вашем городе, делаем это самостоятельно и всю ответственность берем на себя. Мы ищем мастеров через социальные сети, по объявлениям, вытягиваем домушников, переманиваем мастеров из других барбершопов и т.д. Ведем переговоры и обмениваемся информацией. Мастеров мы будем искать только опытных и имеющих стаж по работе с мужскими стрижками. Мы их найдем в любом по величине городе, это мы можем гарантировать.
+
+        section.section
+            .shadow 
+                img(src="./img/advertisingbg.png")
+            .content
+                h3.number 9
+                h3.text__title.text__title--bold Реклама в соц. сетях
+                p.text__text.text__text--left Далее, наша команда начинает раскручивать Вас в социальных сетях самостоятельно, не отвлекая Вас. Мы занимаемся группой ВКонтакте и Instagram аккаунтом. Мы самостоятельно разогреваем ажиотаж о готовящемся открытии «OldBoy Barbershop» в Вашем городе. Выкладываем фото, пишем информацию, занимаемся целевой рекламой в социальных сетях. Это значительно экономит Ваше время. 
+
+        section.section
+            .shadow
+                img(src="./img/openbg.png")
+            .content
+                h3.number 10
+                h3.text__title.text__title--bold Обучение мастеров и открытие 
+                p.text__text.text__text--left Мы вылетаем к Вам в город в составе ведущего специалиста, обладающего статусом технолога American Crew, и основателя OldBoy. Живем у Вас в городе, проводим кастинги по мастерам, мастер классы и, конечно же, передаем философию OldBoy. Общение по обмену опытом и технологии опасного бритья, а так же семинар правильного использования мужской косметики. Мы поможем Вам провести открытие, пострижем Ваших клиентов на открытии и конечно же создадим правильную атмосферу. 
+
+        section.section
+            .shadow
+                img(src="./img/needbg.jpg")
+            .content
+                h3.text__title.text__title--bold.text__title--underline Для этого потребуется 
+                .features
+                    ul.features__list 
+                        li.features__item
+                            img(src="./img/features/city-feature.png")
+                            h4.features__title Помещение
+                            p.features__desc для барбершопа от 35 до 70 м
+                        
+                        li.features__item
+                            img(src="./img/features/wallet-feature.png")
+                            h4.features__title Инвестиции 
+                            p.features__desc 1000-1150 тыс. рублей (ремонтные работы, оборудование, косметика и открытие, включая все дополнительные расходы )
+
+                        li.features__item
+                            img(src="./img/features/time-feature.png")
+                            h4.features__title Время 
+                            p.features__desc для открытия от 35 до 45 дней 
+                        li.features__item--total
+                            p.features__desc Для Москвы и Санкт-Петербурга эта сумма будет 1250-1400 тыс. рублей
+
+        section.section.section--color
+            .content
+                h3.text__title.text__title--bold Как будет выглядеть ваш барбершоп
+                .gallery
+                        a.gallery__link: img.gallery__img--pdonone(src='./img/barbers1.png')
+                        a.gallery__link: img.gallery__img--pdonone(src='./img/barber2.jpg')
+                        a.gallery__link: img.gallery__img--pdonone(src='./img/barber3.jpg')
+                        a.gallery__link: img.gallery__img--pdonone.gallery__img--big(src='./img/barbersbig.jpg')
+            
+        section.section.section--color
+            .content
+                .gallery
+                    a.gallery__link: img.gallery__img--full(src='./img/barbers1.png')
+                    a.gallery__link: img.gallery__img--full(src='./img/barber2.jpg')
+                    a.gallery__link: img.gallery__img--full(src='./img/barber3.jpg')
+                    a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
+                    a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
+                    a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
+                    a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
+                    a.gallery__link: img.gallery__img--short(src='./img/barbersbig.jpg')
+
+        section.section
+            .shadow
+                img(src="./img/advantagesbg.jpg")
+            .content
+                h3.text__title.text__title--bold.text__title--underline Преимущества 
+                h3.text__title.text__title--boldsuptitle франшизы «OldBoy Barbershop» 
+                .features
+                    ul.features__list
+                        li.features__item
+                            img(src="./img/features/features1.png")
+                            h4.features__title Экслюзивный дизайн 
+                            p.features__desc неповторимая атмосфера брутального барбершопа
+                        li.features__item
+                            img(src="./img/features/open-feature.jpg")
+                            h4.features__title Ни одной закрывшейся точки 
+                            p.features__desc (из 65 на 6 мая 2017)
+
+                        li.features__item
+                            img(src="./img/features/loayal-feature.png")
+                            h4.features__title Самый лояльный роялти 
+                            p.features__desc всего 5%
+
+                        li.features__item
+                            img(src="./img/features/creme-feature.png")
+                            h4.features__title Собственное производство 
+                            p.features__desc мужской косметики 
+                        li.features__item
+                            img(src="./img/features/tatoo-feature.png")
+                            h4.features__title Тату-студия
+                            p.features__desc Без ваших вложений (по желанию)
+
+        section.section
+            .shadow 
+                img(src="./img/supportbg.png")
+            .content
+                h3.text__title.text__title--bold.text__title--underline О нашей поддержке 
+                p.text__text Наша поддержка — <span>это поддержка во всем.</span> Это специальный штат профессионалов состоящий из дизайнеров, юристов, маркетологов, IT-программистов, которые работают 5 дней в неделю специально для Вас!
+                p.text__text Например, через год, после того как состоялось открытие, Вы решите сделать баннер на какое-нибудь мероприятие, или Вам потребуется помощь юриста, дизайнера, то Вы просто обращаетесь к нам и получаете это совершенно бесплатно, и, самое главное, в короткий срок.
+                p.text__text Помимо всего этого у Вас будет персональный менеджер для решения любых вопросов, связанных с работой парикмахерской.
+        
+        section.section
+            .shadow
+                img(src="./img/endbg.png")
+            .content
+                p.text__text Если в вашем городе еще нет барбершопа OldBoy, то это лишь вопрос времени!  
+                p.text__text Возможно, в этот самый момент твой (перейдём на ты?) сосед или друг.... а может даже враг читает эту же презентацию и уже звонит нам. А чего ждёшь ты?
+                p.text__title.text__title--center  Звони сейчас
+                br
+                p.text__text.text__text--bg +7 952 794 78 36
+                br
+                p.text__text.text__text--bg  Владислав
+                br
+                p.text__text  менеджер по развитию франчайзинговой сети барбершопов OldBoy 
+
+
+
+
+
+
+
 
 

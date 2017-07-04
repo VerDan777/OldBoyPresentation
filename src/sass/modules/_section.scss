@@ -1,4 +1,12 @@
 .section {
     height: 100vh;
-    padding-top: 100px;
+    position: relative;
+
+    &--color {
+        background: #161620;
+    }
+}
+
+img {
+    width: 100%;
 }
