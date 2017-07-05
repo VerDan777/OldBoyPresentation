@@ -2,20 +2,30 @@
     text-align: left;
     &__list {
         padding: 0;
-        margin: 0;
+        margin-left: 175px;
+        width: 50%;
         // list-style-image: url('./img/features/dbfeature.png');
          text-align: left;
     }
     &__item {
         display: inline-block;
         font-family: 'Ubuntu',sans-serif;
+        font-size: 1.5rem;
+        font-weight: 100;
         color:white;
-       position: relative;
+        position: relative;
+        margin: 20px 0;
         
     }
     &__img {
         position: absolute;
         width: 80px;
         height: 80px;
+    }
+    span {
+        background: $accent;
+        color:#000000;
+        font-weight: 100;
+        padding:10px 10px;
     }
 }

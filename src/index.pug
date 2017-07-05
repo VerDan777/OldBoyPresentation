@@ -10,36 +10,40 @@ head
 body    
     .parallax
         section.section
-            .parallax__layer
-                img(src="./img/headerbg.png")
-                .content
-                    .logo: img(src="./img/logo.png")
-                    h2.header__title Открой свою мужскую парикмахерскую
-                    h3.text__title.text__title--center.text__title--orangebg  и начни зарабатывать от 250 тыс. рублей в месяц
+                .parallax__layer.parallax__layer--base
+                    .shadow
+                        img(src="./img/headerbg.png")
+                .parallax__layer.parallax__layer--back
+                    .content
+                            .logo: img(src="./img/logo.png")
+                            h2.header__title Открой свою мужскую парикмахерскую
+                            h3.text__title.text__title--center.text__title--orangebg  и начни зарабатывать от 250 тыс. рублей в месяц
             
         section.section
-                .parallax__layer
-                    img(src="./img/whybg.png")
-                .parallax__layer
-                .content
-                    h3.texts__title.text__title--why Наверняка вы читаете эту презентацию  не от безделья а потому что хотите открыть собственный бизнес , который должен быть в первую очередь доходным и конечно же интересным. 
-                    h3.text__title.text__title--orangebg Мы уверены,что мы - лучшие!
-                    br
-                    h3.text__title Почему?
-                    br
-                    h3.text__text.text__text--why-preference.text__text--why--preference А вот почему, мы Вам сейчас и расскажем
+                    .shadow
+                        img(src="./img/whybg.png")
+                    .content
+                        h3.texts__title.text__title--why Наверняка вы читаете эту презентацию  не от безделья а потому что хотите открыть собственный бизнес , который должен быть в первую очередь доходным и конечно же интересным. 
+                        h3.text__title.text__title--orangebg Мы уверены,что мы - лучшие!
+                        br
+                        h3.text__title Почему?
+                        br
+                        h3.text__text.text__text--why-preference.text__text--why--preference А вот почему, мы Вам сейчас и расскажем
 
         section.section
-            .shadow
-                img(src="./img/butbg.jpg")
-            .content
-                    h1.text__title.text__title--center Но!
-                    h3.text__title В начале, давайте договоримся, что мы будем рассказывать <span>все условия честно</span> и без преувеличения, без использования шаблонов и дешёвых обещаний.
-                    h3.text__title Будем рассказывать все понятно и на русском человеческом языке.
+            .parallax__layer.parallax__layer--base
+                .shadow
+                    img(src="./img/butbg.jpg")
+            .parallax__layer.parallax__layer--back
+                .content
+                        h1.text__title.text__title--center Но!
+                        h3.text__title В начале, давайте договоримся, что мы будем рассказывать <span>все условия честно</span> и без преувеличения, без использования шаблонов и дешёвых обещаний.
+                        h3.text__title Будем рассказывать все понятно и на русском человеческом языке.
 
         section.section 
             .shadow
-                img(src="/img/pricebg.jpg")   
+                img(src="/img/pricebg.jpg")
+           
             .content 
                     h3.text__title Начнем прямо сейчас и сразу!
                     h3.text__title.text__title--underline  Стоимость франшизы 
@@ -54,19 +58,20 @@ body
                     p.text__title.text__title--prim (никто, кроме Вас , в городе открыть OldBoy не сможет)
         
         section.section
-            .shadow
-                img(src="./img/sumbg.png")
-            .content
-                h3.text__title Что входит в эту сумму?
-                h3.text__text.text__text--plain Взнос включает в себя в совокупности все расходы с нашей стороны, которые мы понесем <span>для успешного открытия Вашего</span> «OldBoy Barbershop».
-                p.text__text.text__text--why--preference А теперь более конкретно
+            .parallax__layer.parallax__layer--base
+                .shadow
+                    img(src="./img/sumbg.png")
+            .parallax__layer.parallax__layer--back
+                .content
+                    h3.text__title Что входит в эту сумму?
+                    h3.text__text.text__text--plain Взнос включает в себя в совокупности все расходы с нашей стороны, которые мы понесем <span>для успешного открытия Вашего</span> «OldBoy Barbershop».
+                    p.text__text.text__text--why--preference А теперь более конкретно
 
         section.section
             .shadow
                 img(src="./img/stagesbg.png")
             .content
                 h3.text__title Этапы открытия Вашего  
-                br
                 h3.text__title  «OldBoy Barbershop»
                 .arrow
                     i.fa.fa-chevron-down.arrow__arrow(aria-hidden="true" style="width:200px")
@@ -79,7 +84,7 @@ body
                 h3.text__title.text__title--bold Подписание договора
                 p.text__text.text__text--left Договор обычно заключается дистанционно. Если же Вы решите прилететь к нам в город (управляющая компания находится в г. Калининград), мы организуем Вам чартер и экскурсию по нашим OldBoy - покажем Вам как работает бизнес изнутри.Договор заключаем как и на физические, так и на юридические лицДалее, у вас всегда будет на связи юрист от нашей команды, кото 
             
-        section.section.search-room: .wrapper
+        section.section
             .shadow
                 img(src="./img/search-roombg.png")
             .content
@@ -138,7 +143,7 @@ body
                 img(src="./img/crmbg.png")
             .content
                 h3.number 7
-                h3.text__title.text__title--bold Подключение CRM  и онлайн-записи
+                h3.text__title.text__title--bold.text__title--balance Подключение CRM  и онлайн-записи
                 p.text__text.text__text--left Мы подключаем Вам и вашему Барбершопу мобильное приложение, СRМ систему учёта, и онлайн запись. Вы всегда сможете через телефон контролировать сумму в кассе, количество записей клиентов и проданный товар.CRM система учёта полностью исключает  возможность воровства сотрудников. Мы за свой счёт оплачиваем аб. плату СRМ системы и несём все расходы на поддержку онлайн сервисов (моб. приложение, сайт).
 
         section.section
@@ -149,15 +154,16 @@ body
                 p.text__text Наши барбершопы полностью автоматизированы:
                 .barbershop-feature
                     ul.barbershop-feature__list
-                    mixin feature(text,imgURL)
-                            li.barbershop-feature__item=text
-                                img.barbershop-feature__img(src=imgURL)
-                    +feature('Клиентская база со статистикой и историей посещений.Помогает не терять постоянных клиентов.','./img/features/dbfeature.png')
-                    +feature('Электронный журнал записи клиентов, с функцией SMS и E-mail напоминаний, что уменьшает количество опоздавших на стрижку.','./img/features/docsfeature.png')
-                    +feature('Онлайн запись помогает не упускать новых клиентов и облегчает работу администратора.','./img/features/onlinefeature.png')
-                    +feature('Мобильное прииложение с онлайн-записью.Более 45% клиентов делают запись через мобильное приложение','./img/features/mobilefeature.png')
-                    +feature('Полная статистика, чтобы знать ключевые показатели бизнеса.','./img/features/graphfeature.png')
-                    
+                        li.barbershop-feature__item <span>Клиентская база</span> со статистикой и историей посещений.Помогает не терять постоянных клиентов
+                                img.barbershop-feature__img(src="#")
+                        li.barbershop-feature__item <span>Электронный журнал</span> записи клиентов, с функцией SMS и E-mail напоминаний, что уменьшает количество опоздавших на стрижку.
+                            img.barbershop-feature__img(src="#")
+                        li.barbershop-feature__item <span>Онлайн запись</span> помогает не упускатьtложение с онлайн-записью.Более 45% клиентов делают запись через мобильноe приложение.
+                            img.barbershop-feature__img(src="#")
+                        li.barbershop-feature__item <span>Полная статистика</span>, чтобы знать ключевые показатели бизнеса.
+                            img.barbershop-feature__img(src="#")
+                        li.barbershop-feature__item <span>Мобильное приложение</span>, с онлай-записью.Более 45% клиентов делают запись через мобильное приложение.
+                            
 
         section.section
             .shadow
@@ -180,8 +186,8 @@ body
                 img(src="./img/openbg.png")
             .content
                 h3.number 10
-                h3.text__title.text__title--bold Обучение мастеров и открытие 
-                p.text__text.text__text--left Мы вылетаем к Вам в город в составе ведущего специалиста, обладающего статусом технолога American Crew, и основателя OldBoy. Живем у Вас в городе, проводим кастинги по мастерам, мастер классы и, конечно же, передаем философию OldBoy. Общение по обмену опытом и технологии опасного бритья, а так же семинар правильного использования мужской косметики. Мы поможем Вам провести открытие, пострижем Ваших клиентов на открытии и конечно же создадим правильную атмосферу. 
+                h3.text__title.text__title--bold.text__title--balance Обучение мастеров и открытие 
+                p.text__text.text__text--left.text__text--balance Мы вылетаем к Вам в город в составе ведущего специалиста, обладающего статусом технолога American Crew, и основателя OldBoy. Живем у Вас в городе, проводим кастинги по мастерам, мастер классы и, конечно же, передаем философию OldBoy. Общение по обмену опытом и технологии опасного бритья, а так же семинар правильного использования мужской косметики. Мы поможем Вам провести открытие, пострижем Ваших клиентов на открытии и конечно же создадим правильную атмосферу. 
 
         section.section
             .shadow
@@ -193,19 +199,19 @@ body
                         li.features__item
                             img(src="./img/features/city-feature.png")
                             h4.features__title Помещение
-                            p.features__desc для барбершопа от 35 до 70 м
+                            .features__desc для барбершопа от 35 до 70 м
                         
                         li.features__item
                             img(src="./img/features/wallet-feature.png")
                             h4.features__title Инвестиции 
-                            p.features__desc 1000-1150 тыс. рублей (ремонтные работы, оборудование, косметика и открытие, включая все дополнительные расходы )
+                            .features__desc 1000-1150 тыс. рублей (ремонтные работы, оборудование, косметика и открытие, включая все дополнительные расходы )
 
                         li.features__item
                             img(src="./img/features/time-feature.png")
                             h4.features__title Время 
-                            p.features__desc для открытия от 35 до 45 дней 
+                            .features__desc для открытия от 35 до 45 дней 
                         li.features__item--total
-                            p.features__desc Для Москвы и Санкт-Петербурга эта сумма будет 1250-1400 тыс. рублей
+                            .features__desc Для Москвы и Санкт-Петербурга эта сумма будет 1250-1400 тыс. рублей
 
         section.section.section--color
             .content
@@ -281,6 +287,8 @@ body
                 p.text__text.text__text--bg  Владислав
                 br
                 p.text__text  менеджер по развитию франчайзинговой сети барбершопов OldBoy 
+
+
 
 
 

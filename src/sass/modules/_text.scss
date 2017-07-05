@@ -66,6 +66,10 @@
        }
 
     }
+    &--balance {
+        font-size:4rem;
+        margin-left:50px; 
+    }
     }
     &__text {
 
@@ -106,6 +110,9 @@
        }
        &--bg {
            font-size: 4rem;
+       }
+       &--balance {
+           margin-left: 250px;
        }
        
  
