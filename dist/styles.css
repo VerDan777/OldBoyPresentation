@@ -423,13 +423,16 @@ ul {
 .section {
   height: 130vh;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  transform-style: preserve-3d; }
   .section--color {
     background: #161620; }
-
-img {
-  width: 100%;
-  min-height: 100%; }
+  .section img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    height: 100%; }
 
 .header {
   height: 100%;
@@ -998,23 +1001,14 @@ img {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    perspective-origin-x: 100%; }
+    left: 0; }
   .parallax__layer--base {
     transform: translateZ(0); }
   .parallax__layer--back {
-    transform: translateZ(-1px); }
+    transform: translateZ(-1px) scale(2.1); }
 
 .shadow {
   height: 100%; }
-  .shadow::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); }
 
 .barbershop-feature {
   text-align: left; }
@@ -1040,3 +1034,11 @@ img {
     color: #000000;
     font-weight: 100;
     padding: 10px 10px; }
+
+.slide__bg--img {
+  transform: translateZ(-1px) scale(2.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }

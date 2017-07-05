@@ -10,40 +10,35 @@ head
 body    
     .parallax
         section.section
-                .parallax__layer.parallax__layer--base
-                    .shadow
-                        img(src="./img/headerbg.png")
-                .parallax__layer.parallax__layer--back
-                    .content
-                            .logo: img(src="./img/logo.png")
-                            h2.header__title Открой свою мужскую парикмахерскую
-                            h3.text__title.text__title--center.text__title--orangebg  и начни зарабатывать от 250 тыс. рублей в месяц
-            
+            .slide__bg
+                img.slide__bg--img(src="./img/headerbg.png")
+            .content
+                .logo: img(src="./img/logo.png")
+                h2.header__title Открой свою мужскую парикмахерскую
+                h3.text__title.text__title--center.text__title--orangebg  и начни зарабатывать от 250 тыс. рублей в месяц
+    
         section.section
-                    .shadow
-                        img(src="./img/whybg.png")
-                    .content
-                        h3.texts__title.text__title--why Наверняка вы читаете эту презентацию  не от безделья а потому что хотите открыть собственный бизнес , который должен быть в первую очередь доходным и конечно же интересным. 
-                        h3.text__title.text__title--orangebg Мы уверены,что мы - лучшие!
-                        br
-                        h3.text__title Почему?
-                        br
-                        h3.text__text.text__text--why-preference.text__text--why--preference А вот почему, мы Вам сейчас и расскажем
+             .shadow
+                img(src="./img/whybg.png")
+             .content
+                h3.texts__title.text__title--why Наверняка вы читаете эту презентацию  не от безделья а потому что хотите открыть собственный бизнес , который должен быть в первую очередь доходным и конечно же интересным. 
+                h3.text__title.text__title--orangebg Мы уверены,что мы - лучшие!
+                br
+                h3.text__title Почему?
+                br
+                h3.text__text.text__text--why-preference.text__text--why--preference А вот почему, мы Вам сейчас и расскажем
 
         section.section
-            .parallax__layer.parallax__layer--base
-                .shadow
-                    img(src="./img/butbg.jpg")
-            .parallax__layer.parallax__layer--back
-                .content
-                        h1.text__title.text__title--center Но!
-                        h3.text__title В начале, давайте договоримся, что мы будем рассказывать <span>все условия честно</span> и без преувеличения, без использования шаблонов и дешёвых обещаний.
-                        h3.text__title Будем рассказывать все понятно и на русском человеческом языке.
+            .slide__bg
+                img.slide__bg--img(src="./img/butbg.jpg")
+            .content
+                    h1.text__title.text__title--center Но!
+                    h3.text__title В начале, давайте договоримся, что мы будем рассказывать <span>все условия честно</span> и без преувеличения, без использования шаблонов и дешёвых обещаний.
+                    h3.text__title Будем рассказывать все понятно и на русском человеческом языке.
 
         section.section 
             .shadow
                 img(src="/img/pricebg.jpg")
-           
             .content 
                     h3.text__title Начнем прямо сейчас и сразу!
                     h3.text__title.text__title--underline  Стоимость франшизы 
@@ -58,10 +53,8 @@ body
                     p.text__title.text__title--prim (никто, кроме Вас , в городе открыть OldBoy не сможет)
         
         section.section
-            .parallax__layer.parallax__layer--base
-                .shadow
-                    img(src="./img/sumbg.png")
-            .parallax__layer.parallax__layer--back
+                .slide__bg
+                    img.slide__bg--img(src="./img/sumbg.png")
                 .content
                     h3.text__title Что входит в эту сумму?
                     h3.text__text.text__text--plain Взнос включает в себя в совокупности все расходы с нашей стороны, которые мы понесем <span>для успешного открытия Вашего</span> «OldBoy Barbershop».
@@ -192,7 +185,7 @@ body
         section.section
             .shadow
                 img(src="./img/needbg.jpg")
-            .content
+            .content.content--no
                 h3.text__title.text__title--bold.text__title--underline Для этого потребуется 
                 .features
                     ul.features__list 
