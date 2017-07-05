@@ -1,0 +1,21 @@
+.barbershop-feature {
+    text-align: left;
+    &__list {
+        padding: 0;
+        margin: 0;
+        // list-style-image: url('./img/features/dbfeature.png');
+         text-align: left;
+    }
+    &__item {
+        display: inline-block;
+        font-family: 'Ubuntu',sans-serif;
+        color:white;
+       position: relative;
+        
+    }
+    &__img {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+    }
+}

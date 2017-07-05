@@ -427,7 +427,8 @@ ul {
     background: #161620; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  height: 1000px; }
 
 .header {
   height: 100%;
@@ -455,10 +456,13 @@ img {
     display: inline-block;
     font-size: 4rem;
     color: white;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    padding-top: 15px; }
     .text__title--why {
       font-size: 3rem;
-      padding-top: 100px; }
+      padding-top: 100px;
+      color: white;
+      font-family: 'Ubuntu',sans-serif; }
     .text__title--arrow {
       position: relative; }
     .text__title--center {
@@ -492,7 +496,8 @@ img {
   .text__text {
     padding: 15px 0%;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 200px;
+    margin-right: 150px;
     font-family: 'Ubuntu',sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -926,24 +931,23 @@ img {
     height: 100%;
     background-color: rgba(22, 22, 32, 0.5); }
 
-.features {
+.features__item {
+  vertical-align: top;
   display: inline-block; }
-  .features__list {
-    display: inline-block; }
-  .features__item {
-    vertical-align: top;
-    display: inline-block; }
-  .features__title {
-    color: #ff9800;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1.5rem; }
-  .features__desc {
-    font-family: 'Ubuntu',sans-serif;
-    color: white;
-    width: 100px; }
-  .features img {
-    width: 150px;
-    height: 150px; }
+
+.features__title {
+  color: #ff9800;
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 1.5rem; }
+
+.features__desc {
+  font-family: 'Ubuntu',sans-serif;
+  color: white;
+  width: 100px; }
+
+.features img {
+  width: 150px;
+  height: 150px; }
 
 .need {
   background-image: url("./img/needbg.jpg");
@@ -965,16 +969,14 @@ img {
     height: 100%;
     background: rgba(0, 0, 0, 0.3); }
 
-.arrow__arrow {
-  color: #ff9800; }
+.arrow {
+  font-size: 1.5rem; }
+  .arrow__arrow {
+    color: #ff9800; }
+  .arrow i {
+    font-size: 3.5rem; }
 
 .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center; }
-
-.content1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -998,11 +1000,29 @@ img {
     .parallax__layer--back {
       transform: translateZ(-1px); }
 
-.shadow::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3); }
+.shadow {
+  height: 100%; }
+  .shadow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); }
+
+.barbershop-feature {
+  text-align: left; }
+  .barbershop-feature__list {
+    padding: 0;
+    margin: 0;
+    text-align: left; }
+  .barbershop-feature__item {
+    display: inline-block;
+    font-family: 'Ubuntu',sans-serif;
+    color: white;
+    position: relative; }
+  .barbershop-feature__img {
+    position: absolute;
+    width: 80px;
+    height: 80px; }
