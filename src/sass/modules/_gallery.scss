@@ -1,27 +1,11 @@
 .gallery {
-    display: inline-block;
-    margin-bottom: 100px;
 
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
     &__img {
 
-        width: 400px;
-        height:400px;
-        padding:0 15px;
-
-        &--pdnone {
-            padding: 0 0;
-        }
-        &--big {
-            height: 200px;
-        }
+        max-width: 100%;
     }
-
-    img {
-        height: 20%;
-        width: 20%;
-        
-    }
-    
 }

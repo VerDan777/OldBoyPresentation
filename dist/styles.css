@@ -416,7 +416,7 @@ ul {
 
 .wrapper {
   margin: 0 auto;
-  width: 1170px; }
+  max-width: 1200px; }
   .wrapper--big {
     width: 1400px; }
 
@@ -967,19 +967,11 @@ sub {
   height: 110vh; }
 
 .gallery {
-  display: inline-block;
-  margin-bottom: 100px; }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
   .gallery__img {
-    width: 400px;
-    height: 400px;
-    padding: 0 15px; }
-    .gallery__img--pdnone {
-      padding: 0 0; }
-    .gallery__img--big {
-      height: 200px; }
-  .gallery img {
-    height: 20%;
-    width: 20%; }
+    max-width: 100%; }
 
 .advantages {
   background-image: url("./img/advantagesbg.jpg");
@@ -1103,3 +1095,9 @@ sub {
   left: 0;
   bottom: 0;
   right: 0; }
+
+.img {
+  display: inline-block;
+  width: 50%; }
+  .img img {
+    display: inline-block; }
