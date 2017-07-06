@@ -24,8 +24,13 @@
             position: relative;
         }
       
-          &--center {
+    //       &--center {
 
+    //        color:$accent;
+    //        font-size: 6rem;
+    //        margin:2% auto;
+    //    }
+       &--orange {
            color:$accent;
            font-size: 6rem;
            margin:2% auto;
@@ -52,6 +57,7 @@
        &--prim {
            font-size: 2rem;
            text-align: left;
+           margin-top: 15px; 
        }
        &--underline {
 
@@ -146,15 +152,17 @@ p {
        color:white;
        padding-bottom: 15px;
        padding-top:100px;  
+       margin-left: 155px;
+       margin-right: 55px;
 }
 h4 {
        text-align: center;
        font-family: 'Ubuntu',sans-serif;
        display: inline-block;
-       font-size: 4rem;
+       font-size: 5rem;
        color:white;
-       padding-bottom: 15px;
-       padding-top:15px;
+       padding: 15px 15px;
+
 }
 strong {
         color:$accent;
@@ -171,4 +179,16 @@ strong {
         text-align: center;
         display: inline-block;
     
+}
+sub {
+
+    color:white;
+    font-size: 2.65rem;
+    font-weight: 200;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top:15px;
+
 }

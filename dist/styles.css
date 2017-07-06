@@ -421,7 +421,7 @@ ul {
     width: 1400px; }
 
 .section {
-  height: 130vh;
+  height: 110vh;
   position: relative;
   text-align: center;
   transform-style: preserve-3d; }
@@ -469,7 +469,7 @@ ul {
       font-family: 'Ubuntu',sans-serif; }
     .text__title--arrow {
       position: relative; }
-    .text__title--center {
+    .text__title--orange {
       color: #ff9800;
       font-size: 6rem;
       margin: 2% auto; }
@@ -489,7 +489,8 @@ ul {
       font-weight: 200; }
     .text__title--prim {
       font-size: 2rem;
-      text-align: left; }
+      text-align: left;
+      margin-top: 15px; }
     .text__title--underline::after {
       content: '';
       height: 10px;
@@ -556,16 +557,17 @@ p {
   font-size: 3rem;
   color: white;
   padding-bottom: 15px;
-  padding-top: 100px; }
+  padding-top: 100px;
+  margin-left: 155px;
+  margin-right: 55px; }
 
 h4 {
   text-align: center;
   font-family: 'Ubuntu',sans-serif;
   display: inline-block;
-  font-size: 4rem;
+  font-size: 5rem;
   color: white;
-  padding-bottom: 15px;
-  padding-top: 15px; }
+  padding: 15px 15px; }
 
 strong {
   color: #ff9800;
@@ -581,6 +583,16 @@ strong {
   font-size: 3rem;
   text-align: center;
   display: inline-block; }
+
+sub {
+  color: white;
+  font-size: 2.65rem;
+  font-weight: 200;
+  font-family: 'Ubuntu',sans-serif;
+  text-align: left;
+  display: inline-block;
+  padding-bottom: 15px;
+  padding-top: 15px; }
 
 .logo {
   text-align: center;
