@@ -1,11 +1,12 @@
 .barbershop-feature {
     text-align: left;
     &__list {
-        padding: 0;
-        margin-left: 175px;
-        width: 50%;
-        // list-style-image: url('./img/features/dbfeature.png');
-         text-align: left;
+        
+    
+         text-align: center;
+         @include atTabletsPortrait {
+             margin-left:175px;
+         }
     }
     &__item {
         display: inline-block;

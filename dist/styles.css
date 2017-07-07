@@ -421,18 +421,14 @@ ul {
     width: 1400px; }
 
 .section {
-  height: 110vh;
   position: relative;
-  text-align: center;
-  transform-style: preserve-3d; }
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .section {
+      transform-style: preserve-3d;
+      height: 110vh; } }
   .section--color {
     background: #161620; }
-  .section img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    width: 100%;
-    height: 100%; }
 
 .header {
   height: 100%;
@@ -480,7 +476,10 @@ ul {
     .text__title--big {
       font-size: 7rem; }
     .text__title--bold {
-      font-size: 5rem; }
+      font-size: 2.5rem; }
+      @media (min-width: 700px) {
+        .text__title--bold {
+          font-size: 5rem; } }
     .text__title--boldsubtitle {
       font-size: 4rem; }
     .text__title--left {
@@ -499,19 +498,23 @@ ul {
       background: #ff9800;
       margin: 15px auto; }
     .text__title--balance {
-      font-size: 4rem;
-      margin-left: 50px; }
+      font-size: 2.5rem; }
+      @media (min-width: 700px) {
+        .text__title--balance {
+          font-size: 4rem;
+          margin-left: 50px; } }
   .text__text {
     padding: 15px 0%;
     margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 150px;
     font-family: 'Ubuntu',sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
     display: inline-block;
     color: white; }
+    @media (min-width: 700px) {
+      .text__text {
+        font-size: 3rem; } }
     .text__text--why {
       font-size: 3rem;
       padding-top: 100px; }
@@ -526,48 +529,94 @@ ul {
       background: none;
       font-weight: bold; }
     .text__text--left {
-      text-align: left;
-      font-size: 2.65rem;
+      text-align: center;
+      font-size: 1.5rem;
       font-weight: 200; }
+      @media (min-width: 700px) {
+        .text__text--left {
+          font-size: 2rem; } }
     .text__text--bg {
-      font-size: 4rem; }
-    .text__text--balance {
-      margin-left: 250px; }
+      font-size: 2.5rem; }
+      @media (min-width: 700px) {
+        .text__text--bg {
+          font-size: 4rem; } }
+    @media (min-width: 700px) {
+      .text__text--balance {
+        margin-left: 250px; } }
 
 h1 {
   padding-top: 50px;
   text-align: center;
-  font-size: 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   color: white;
   font-family: 'Ubuntu',sans-serif; }
+  @media (min-width: 700px) {
+    h1 {
+      font-size: 4rem; } }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 3.5rem; } }
 
 mark {
+  color: black;
   background: #ff9800;
-  color: #000000;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 1.52;
   font-family: 'Ubuntu',sans-serif;
   padding-bottom: 15px;
   padding-top: 15px;
-  margin: 2% auto; }
+  margin: 20% auto;
+  font-weight: bold; }
+  @media (min-width: 700px) {
+    mark {
+      font-size: 2rem;
+      background: #ff9800;
+      color: #000000;
+      padding: 0 5px;
+      margin: 10% auto; } }
+  @media (min-width: 900px) {
+    mark {
+      padding: 0 15px; } }
+  @media (min-width: 1200px) {
+    mark {
+      margin: 1% auto; } }
 
 p {
   text-align: center;
   font-family: 'Ubuntu',sans-serif;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: white;
   padding-bottom: 15px;
   padding-top: 100px;
-  margin-left: 155px;
-  margin-right: 55px; }
+  width: 100%; }
+  @media (min-width: 700px) {
+    p {
+      margin-left: 10px;
+      margin-right: 55px;
+      font-size: 2.5rem; } }
 
 h4 {
   text-align: center;
   font-family: 'Ubuntu',sans-serif;
   display: inline-block;
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   padding: 15px 15px; }
+  @media (min-width: 700px) {
+    h4 {
+      font-size: 4rem; } }
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Ubuntu',sans-serif;
+  display: inline-block;
+  font-size: 4rem; }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 6rem; } }
 
 strong {
   color: #ff9800;
@@ -576,13 +625,19 @@ strong {
   font-weight: bold;
   padding: 15px 0%;
   margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 150px;
   font-family: 'Ubuntu',sans-serif;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   display: inline-block; }
+  @media (min-width: 700px) {
+    strong {
+      margin-left: 200px;
+      margin-right: 150px;
+      font-size: 2rem; } }
+  @media (min-width: 900px) {
+    strong {
+      font-size: 3rem; } }
 
 sub {
   color: white;
@@ -592,14 +647,23 @@ sub {
   text-align: left;
   display: inline-block;
   padding-bottom: 15px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  margin: 0 35px; }
 
 .logo {
   text-align: center;
-  padding-top: 7%; }
+  padding-top: 20%; }
   .logo img {
-    width: 50%;
-    height: 100%; }
+    max-width: 50%;
+    max-height: 100%;
+    margin: 0 auto;
+    display: block; }
+    @media (min-width: 700px) {
+      .logo img {
+        width: 30%; } }
+    @media (min-width: 1200px) {
+      .logo img {
+        width: 40%; } }
 
 .why {
   background-image: url("./img/whybg.png");
@@ -705,16 +769,21 @@ sub {
     background: rgba(0, 0, 0, 0.2); }
 
 .number {
-  display: inline-block;
+  display: none;
   position: absolute;
   left: 0;
   color: white;
   border: 22px solid orange;
   border-left: none;
-  padding: 50px 50px;
+  padding: 10px 10px;
   font-size: 5rem;
   font-family: 'Ubuntu',sans-serif;
   top: 30px; }
+  @media (min-width: 700px) {
+    .number {
+      border: 22px solid orange;
+      border-left: none;
+      display: inline-block; } }
 
 .contract {
   background-image: url("./img/contractbg.png");
@@ -993,23 +1062,28 @@ sub {
     height: 100%;
     background-color: rgba(22, 22, 32, 0.5); }
 
-.features__item {
-  vertical-align: top; }
-
-.features__title {
-  color: #ff9800;
-  font-family: 'Ubuntu',sans-serif;
-  font-size: 1.5rem; }
-
-.features__desc {
-  font-family: 'Ubuntu',sans-serif;
-  color: white;
-  width: 100px;
+.features {
   display: inline-block; }
-
-.features img {
-  width: 150px;
-  height: 150px; }
+  .features__list {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left; }
+  .features__item {
+    vertical-align: top;
+    margin: 0 auto; }
+  .features__title {
+    color: #ff9800;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.5rem; }
+  .features__desc {
+    font-family: 'Ubuntu',sans-serif;
+    color: white;
+    width: 100px;
+    display: inline-block; }
+  .features img {
+    width: 150px;
+    height: 150px; }
 
 .need {
   background-image: url("./img/needbg.jpg");
@@ -1042,7 +1116,10 @@ sub {
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
 
 .parallax {
   perspective: 1px;
@@ -1066,10 +1143,10 @@ sub {
 .barbershop-feature {
   text-align: left; }
   .barbershop-feature__list {
-    padding: 0;
-    margin-left: 175px;
-    width: 50%;
-    text-align: left; }
+    text-align: center; }
+    @media (min-width: 700px) {
+      .barbershop-feature__list {
+        margin-left: 175px; } }
   .barbershop-feature__item {
     display: inline-block;
     font-family: 'Ubuntu',sans-serif;
@@ -1099,5 +1176,11 @@ sub {
 .img {
   display: inline-block;
   width: 50%; }
+  .img__bg {
+    object-fit: cover;
+    width: 100%;
+    min-height: 110vh; }
+    .img__bg--big {
+      height: 150vh; }
   .img img {
     display: inline-block; }

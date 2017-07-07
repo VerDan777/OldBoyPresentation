@@ -1,13 +1,15 @@
 .features {
-
+    display: inline-block;
 
     &__list {    
-
-
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        text-align: left;
     }
     &__item {
         vertical-align: top;
-        // display: inline-block;
+        margin: 0 auto;
 
     }
     &__title {

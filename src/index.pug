@@ -11,7 +11,7 @@ body
     .parallax
         section.section
             .slide__bg
-                img(src="./img/headerbg.png")
+                img.img__bg(src="./img/headerbg.png")
             .content
                 .logo: img(src="./img/logo.png")
                 h1 Открой свою мужскую парикмахерскую
@@ -19,7 +19,7 @@ body
     
         section.section
              .shadow
-                img(src="./img/whybg.png")
+                img.img__bg(src="./img/whybg.png")
              .content
                 p Наверняка вы читаете эту презентацию  не от безделья а потому что хотите открыть собственный бизнес , который должен быть в первую очередь доходным и конечно же интересным. 
                 mark Мы уверены,что мы - лучшие!
@@ -29,15 +29,15 @@ body
                 strong А вот почему, мы Вам сейчас и расскажем
 
         section.section
-            .slide__bg
-                img(src="./img/butbg.jpg")
+            .shadow
+                img.img__bg(src="./img/butbg.jpg")
             .content
                     h4.text__title--orange Но!
                     p В начале, давайте договоримся, что мы будем рассказывать <mark>все условия честно</mark> и без преувеличения, без использования шаблонов и дешёвых обещаний. Будем рассказывать все понятно и на русском человеческом языке.
 
         section.section 
             .shadow
-                img(src="/img/pricebg.jpg")
+                img.img__bg--big(src="/img/pricebg.jpg")
             .content 
                     p Начнем прямо сейчас и сразу!
                     br
@@ -46,17 +46,16 @@ body
                     h4 «OldBoy Barbershop» (паушальный взнос) 
                     .arrow
                         i.fa.fa-chevron-down.arrow__arrow(aria-hidden="true" )
-                    strong 400 тыс. рублей
+                    h2 400 тыс. рублей
                     sub +100 тыс. рублей для города миллионика
                     br
-                    sub +100 тыс. рублей за эксклюзив на город
-                    br
+                    sub +100 тыс. рублей за эксклюзив на город   
                     sub.text__title--prim (никто, кроме Вас , в городе открыть OldBoy не сможет)
         
         section.section
-                .slide__bg
-                    img(src="./img/sumbg.png")
-                .content
+                .shadow
+                    img.img__bg(src="./img/sumbg.png")
+                .content    
                     h4 Что входит в эту сумму?
                     p Взнос включает в себя в совокупности все расходы с нашей стороны, которые мы понесем <mark>для успешного открытия Вашего</mark> «OldBoy Barbershop».
                     strong А теперь более конкретно
@@ -88,22 +87,27 @@ body
         
         section.section
             .slide__bg
-                img(src="./img/designbg.png")
+                img.img__bg(src="./img/designbg.png")
             .content
                 .number 3 
                 h4 Создание дизайн-проекта
-                p.text__text.text__text--left.text__text--small  После утверждения помещения, наша команда дизайнеров разрабатывает дизайн - проект. Это не просто дизайнеры, это специалисты, которые сделали более полусотни дизайнов барбершопа и знают все тонкости от правильного расположения розеток до таких тонких моментов, как направление света, расстояние между креслами и так далее.Дизайн делается от 5 до 7 рабочих дней. Вы будете принимать комплексное участие в процессе, всегда поддерживая связь с дизайнерами. Мы сохраним Ваши пожелания, используя корпоративный стиль компании.
+                p.text__text.text__text--left  После утверждения помещения, наша команда дизайнеров разрабатывает дизайн - проект. Это не просто дизайнеры, это специалисты, которые сделали более полусотни дизайнов барбершопа и знают все тонкости от правильного расположения розеток до таких тонких моментов, как направление света, расстояние между креслами и так далее.Дизайн делается от 5 до 7 рабочих дней. Вы будете принимать комплексное участие в процессе, всегда поддерживая связь с дизайнерами. Мы сохраним Ваши пожелания, используя корпоративный стиль компании.
         
         
         section.section.section--color
             .content
-                h3.text__title.text__title--bold Примеры дизайн-проекта
+                h4 Примеры дизайн-проекта
                 .gallery
-                        a.gallery__link: img.gallery__img(src='./img/gallery1.png')
-                        a.gallery__link: img.gallery__img(src='./img/gallery2.png')
-                        a.gallery__link: img.gallery__img(src='./img/gallery3.png')
-                        a.gallery__link: img.gallery__img(src='./img/gallery3.png')
-                        a.gallery__link: img.gallery__img(src='./img/gallery3.png')
+                    .img
+                         img.gallery__img(src='./img/gallery1.png')
+                    .img
+                         img.gallery__img(src='./img/gallery2.png')
+                    .img
+                         img.gallery__img(src='./img/gallery3.png')
+                    .img
+                         img.gallery__img(src='./img/gallery3.png')
+                    //- .img
+                    //-      img.gallery__img(src='./img/gallery3.png')
 
 
 
@@ -142,21 +146,21 @@ body
 
         section.section
             .slide__bg
-                img(src="./img/managebg.png")
+                img.img__bg(src="./img/managebg.png")
             .content
                 h4 Управляйте барбершопом с телефона
                 p Наши барбершопы полностью автоматизированы:
                 .barbershop-feature
                     ul.barbershop-feature__list
-                        li.barbershop-feature__item <mark>Клиентская база</mark> со статистикой и историей посещений.Помогает не терять постоянных клиентов
+                        li.barbershop-feature__item <mark>Клиентская база</mark> <br>со статистикой и историей посещений.Помогает не терять постоянных клиентов
                                 img.barbershop-feature__img(src="#")
-                        li.barbershop-feature__item <mark>Электронный журнал</mark> записи клиентов, с функцией SMS и E-mail напоминаний, что уменьшает количество опоздавших на стрижку.
+                        li.barbershop-feature__item <mark>Электронный журнал</mark> <br>записи клиентов, с функцией SMS и E-mail напоминаний, что уменьшает количество опоздавших на стрижку.
                             img.barbershop-feature__img(src="#")
-                        li.barbershop-feature__item <mark>Онлайн запись</mark> помогает не упускатьtложение с онлайн-записью.Более 45% клиентов делают запись через мобильноe приложение.
+                        li.barbershop-feature__item <mark>Онлайн запись</mark> <br>помогает не упускатьtложение с онлайн-записью.Более 45% клиентов делают запись через мобильноe приложение.
                             img.barbershop-feature__img(src="#")
-                        li.barbershop-feature__item <mark>Полная статистика</mark>, чтобы знать ключевые показатели бизнеса.
+                        li.barbershop-feature__item <mark>Полная статистика</mark>,<br>чтобы знать ключевые показатели бизнеса.
                             img.barbershop-feature__img(src="#")
-                        li.barbershop-feature__item <mark>Мобильное приложение</mark>, с онлай-записью.Более 45% клиентов делают запись через мобильное приложение.
+                        li.barbershop-feature__item <mark>Мобильное приложение</mark>,<br>с онлай-записью.Более 45% клиентов делают запись через мобильное приложение.
                             
 
         section.section
@@ -169,7 +173,7 @@ body
 
         section.section
             .shadow 
-                img(src="./img/advertisingbg.png")
+                img.img__bg(src="./img/advertisingbg.png")
             .content
                 .number 9
                 h4 Реклама в соц. сетях
@@ -177,7 +181,7 @@ body
 
         section.section
             .shadow
-                img(src="./img/openbg.png")
+                img.img__bg(src="./img/openbg.png")
             .content
                 .number 10
                 h4.text__title--balance Обучение мастеров и открытие 
@@ -185,61 +189,61 @@ body
 
         section.section
             .shadow
-                img(src="./img/needbg.jpg")
+                img.img__bg--big(src="./img/needbg.jpg")
             .content.content--no
                 h4.text__title--underline Для этого потребуется 
                 .features
                     ul.features__list 
                         li.features__item
-                            img(src="./img/features/city-feature.png")
+                            //- img(src="./img/features/city-feature.png")
                             h4.features__title Помещение
                             .features__desc для барбершопа от 35 до 70 м
                         
                         li.features__item
-                            img(src="./img/features/wallet-feature.png")
+                            //- img(src="./img/features/wallet-feature.png")
                             h4.features__title Инвестиции 
                             .features__desc 1000-1150 тыс. рублей (ремонтные работы, оборудование, косметика и открытие, включая все дополнительные расходы )
 
                         li.features__item
-                            img(src="./img/features/time-feature.png")
+                            //- img(src="./img/features/time-feature.png")
                             h4.features__title Время 
                             .features__desc для открытия от 35 до 45 дней 
-                        li.features__item--total
-                            .features__desc Для Москвы и Санкт-Петербурга эта сумма будет 1250-1400 тыс. рублей
+                        //- li.features__item--total
+                        //-     .features__desc Для Москвы и Санкт-Петербурга эта сумма будет 1250-1400 тыс. рублей
 
         section.section.section--color
             .content
                 h3.text__title.text__title--bold Как будет выглядеть ваш барбершоп
-                .gallery
-                        a.gallery__link: img.gallery__img--pdonone(src='./img/barbers1.png')
-                        a.gallery__link: img.gallery__img--pdonone(src='./img/barber2.jpg')
-                        a.gallery__link: img.gallery__img--pdonone(src='./img/barber3.jpg')
-                        a.gallery__link: img.gallery__img--pdonone.gallery__img--big(src='./img/barbersbig.jpg')
+                //- .gallery
+                //-         a.gallery__link: img.gallery__img--pdonone(src='./img/barbers1.png')
+                //-         a.gallery__link: img.gallery__img--pdonone(src='./img/barber2.jpg')
+                //-         a.gallery__link: img.gallery__img--pdonone(src='./img/barber3.jpg')
+                //-         a.gallery__link: img.gallery__img--pdonone.gallery__img--big(src='./img/barbersbig.jpg')
             
         section.section.section--color
             .content
                 .wrapper
-                    .gallery
-                        .img
-                            img.gallery__img(src='./img/barbers1.png')
-                        .img
-                            img.gallery__img(src='./img/barber2.jpg')
-                        .img
-                            img.gallery__img(src='./img/barber3.jpg')
-                        .img
-                            img.gallery__img(src='./img/barbersbig.jpg')
-                        .img
-                            img.gallery__img(src='./img/barbersbig.jpg')
-                        .img
-                            img.gallery__img(src='./img/barbersbig.jpg')
-                        .img
-                            img.gallery__img(src='./img/barbersbig.jpg')
-                        .img
-                            img.gallery__img(src='./img/barbersbig.jpg')
+                    //- .gallery
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barbers1.png')
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barber2.jpg')
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barber3.jpg')
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barbersbig.jpg')
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barbersbig.jpg')
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barbersbig.jpg')
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barbersbig.jpg')
+                    //-     .img
+                    //-         img.gallery__img(src='./img/barbersbig.jpg')
 
         section.section
             .shadow
-                img(src="./img/advantagesbg.jpg")
+                img.img__bg(src="./img/advantagesbg.jpg")
             .content
                 h4.text__title--underline Преимущества 
                 h4 франшизы «OldBoy Barbershop» 
@@ -281,11 +285,11 @@ body
             .shadow
                 img(src="./img/endbg.png")
             .content
-                p.text__text Если в вашем городе еще нет барбершопа OldBoy, то это лишь вопрос времени!  
-                p.text__text Возможно, в этот самый момент твой (перейдём на ты?) сосед или друг.... а может даже враг читает эту же презентацию и уже звонит нам. А чего ждёшь ты?
-                p.text__title.text__title--center  Звони сейчас
+                p Если в вашем городе еще нет барбершопа OldBoy, то это лишь вопрос времени!  
+                p Возможно, в этот самый момент твой (перейдём на ты?) сосед или друг.... а может даже враг читает эту же презентацию и уже звонит нам. А чего ждёшь ты?
+                h4  Звони сейчас
                 br
-                p.text__text.text__text--bg +7 952 794 78 36
+                p.text__text +7 952 794 78 36
                 br
                 p.text__text.text__text--bg  Владислав
                 br

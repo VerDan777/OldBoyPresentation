@@ -1,6 +1,17 @@
 .img {
     display: inline-block;
     width: 50%;
+
+    &__bg {
+
+    object-fit: cover;
+    width: 100%;
+    min-height: 110vh;
+    
+    &--big {
+        height: 150vh;
+    }
+    }
     img {
         display: inline-block;
     }
