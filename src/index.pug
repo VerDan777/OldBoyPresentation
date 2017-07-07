@@ -10,7 +10,7 @@ head
 body    
     .parallax
         section.section
-            .slide__bg
+            .shadow
                 img.img__bg(src="./img/headerbg.png")
             .content
                 .logo: img(src="./img/logo.png")
@@ -37,7 +37,7 @@ body
 
         section.section 
             .shadow
-                img.img__bg--big(src="/img/pricebg.jpg")
+                img.img__bg(src="/img/pricebg.jpg")
             .content 
                     p Начнем прямо сейчас и сразу!
                     br
@@ -62,7 +62,7 @@ body
 
         section.section
             .shadow
-                img(src="./img/stagesbg.png")
+                img.img__bg(src="./img/stagesbg.png")
             .content
                 h4 Этапы открытия Вашего  
                 h4 «OldBoy Barbershop»
@@ -71,7 +71,7 @@ body
             
         section.section 
             .slide__bg
-                img(src="./img/contractbg.png")
+                img.img__bg(src="./img/contractbg.png")
             .content
                 .number 1
                 h4 Подписание договора
@@ -79,7 +79,7 @@ body
             
         section.section
             .shadow
-                img(src="./img/search-roombg.png")
+                img.img__bg(src="./img/search-roombg.png")
             .content
                 .number 2
                 h4 Поиск помещения
@@ -106,15 +106,13 @@ body
                          img.gallery__img(src='./img/gallery3.png')
                     .img
                          img.gallery__img(src='./img/gallery3.png')
-                    //- .img
-                    //-      img.gallery__img(src='./img/gallery3.png')
-
+                  
 
 
 
         section.section
             .slide__bg
-                img(src="./img/buildbg.png")
+                img.img__bg(src="./img/buildbg.png")
             .content
                 .number 4 
                 h4 Ремонт помещения
@@ -122,7 +120,7 @@ body
             
         section.section
             .shadow
-                img(src="./img/brandbg.png")
+                img.img__bg(src="./img/brandbg.png")
             .content
                 .number 5
                 h4 Передача брэнда
@@ -130,7 +128,7 @@ body
 
         section.section
             .slide__bg
-                img(src="./img/equipmentbg.png")
+                img.img__bg(src="./img/equipmentbg.png")
             .content
                 .number 6
                 h4 Закупка оборудования 
@@ -138,7 +136,7 @@ body
 
         section.section
             .shadow
-                img(src="./img/crmbg.png")
+                img.img__bg(src="./img/crmbg.png")
             .content
                 .number 7
                 h4.text__title--balance Подключение CRM  и онлайн-записи
@@ -165,7 +163,7 @@ body
 
         section.section
             .shadow
-                img(src="./img/mastersbg.png")
+                img.img__bg(src="./img/mastersbg.png")
             .content
                 .number 8
                 h4 Поиск мастеров
@@ -189,23 +187,23 @@ body
 
         section.section
             .shadow
-                img.img__bg--big(src="./img/needbg.jpg")
+                img.img__bg(src="./img/needbg.jpg")
             .content.content--no
                 h4.text__title--underline Для этого потребуется 
                 .features
                     ul.features__list 
                         li.features__item
-                            //- img(src="./img/features/city-feature.png")
+                            img(src="./img/features/city-feature.png")
                             h4.features__title Помещение
                             .features__desc для барбершопа от 35 до 70 м
                         
                         li.features__item
-                            //- img(src="./img/features/wallet-feature.png")
+                            img(src="./img/features/wallet-feature.png")
                             h4.features__title Инвестиции 
                             .features__desc 1000-1150 тыс. рублей (ремонтные работы, оборудование, косметика и открытие, включая все дополнительные расходы )
 
                         li.features__item
-                            //- img(src="./img/features/time-feature.png")
+                            img(src="./img/features/time-feature.png")
                             h4.features__title Время 
                             .features__desc для открытия от 35 до 45 дней 
                         //- li.features__item--total
@@ -214,32 +212,36 @@ body
         section.section.section--color
             .content
                 h3.text__title.text__title--bold Как будет выглядеть ваш барбершоп
-                //- .gallery
-                //-         a.gallery__link: img.gallery__img--pdonone(src='./img/barbers1.png')
-                //-         a.gallery__link: img.gallery__img--pdonone(src='./img/barber2.jpg')
-                //-         a.gallery__link: img.gallery__img--pdonone(src='./img/barber3.jpg')
-                //-         a.gallery__link: img.gallery__img--pdonone.gallery__img--big(src='./img/barbersbig.jpg')
+                .gallery
+                    .img
+                        img.gallery__img(src='./img/barbers1.png')
+                    .img
+                        img.gallery__img(src='./img/barber2.jpg')
+                    .img
+                        img.gallery__img(src='./img/barber3.jpg')
+                    .img
+                        img.gallery__img(src='./img/barbersbig.jpg')
             
         section.section.section--color
             .content
                 .wrapper
-                    //- .gallery
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barbers1.png')
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barber2.jpg')
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barber3.jpg')
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barbersbig.jpg')
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barbersbig.jpg')
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barbersbig.jpg')
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barbersbig.jpg')
-                    //-     .img
-                    //-         img.gallery__img(src='./img/barbersbig.jpg')
+                    .gallery
+                        .img
+                            img.gallery__img(src='./img/barbers1.png')
+                        .img
+                            img.gallery__img(src='./img/barber2.jpg')
+                        .img
+                            img.gallery__img(src='./img/barber3.jpg')
+                        .img
+                            img.gallery__img(src='./img/barbersbig.jpg')
+                        .img
+                            img.gallery__img(src='./img/barbersbig.jpg')
+                        .img
+                            img.gallery__img(src='./img/barbersbig.jpg')
+                        .img
+                            img.gallery__img(src='./img/barbersbig.jpg')
+                        .img
+                            img.gallery__img(src='./img/barbersbig.jpg')
 
         section.section
             .shadow
@@ -251,15 +253,18 @@ body
                     ul.features__list
                         li.features__item
                             img(src="./img/features/features1.png")
+                            br
                             h4.features__title Эксклюзивный дизайн 
-                            p.features__desc неповторимая атмосфера брутального барбершопа
+                            p.features__desc Неповторимая атмосфера брутального барбершопа
                         li.features__item
                             img(src="./img/features/open-feature.jpg")
+                            br
                             h4.features__title Ни одной закрывшейся точки 
                             p.features__desc (из 65 на 6 мая 2017)
 
                         li.features__item
                             img(src="./img/features/loayal-feature.png")
+                            br
                             h4.features__title Самый лояльный роялти 
                             p.features__desc всего 5%
 
@@ -274,7 +279,7 @@ body
 
         section.section
             .shadow 
-                img(src="./img/supportbg.png")
+                img.img__bg(src="./img/supportbg.png")
             .content
                 h4.text__title--underline О нашей поддержке 
                 p Наша поддержка — <mark>это поддержка во всем.</mark> Это специальный штат профессионалов состоящий из дизайнеров, юристов, маркетологов, IT-программистов, которые работают 5 дней в неделю специально для Вас!
@@ -283,7 +288,7 @@ body
         
         section.section
             .shadow
-                img(src="./img/endbg.png")
+                img.img__bg(src="./img/endbg.png")
             .content
                 p Если в вашем городе еще нет барбершопа OldBoy, то это лишь вопрос времени!  
                 p Возможно, в этот самый момент твой (перейдём на ты?) сосед или друг.... а может даже враг читает эту же презентацию и уже звонит нам. А чего ждёшь ты?

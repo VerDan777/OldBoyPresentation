@@ -1,8 +1,11 @@
 .section {
     position: relative;
     text-align: center;
-    // height: 110vh;
+    height: 170vh;
 
+    @include atTabletsLandscape {
+        height: 110vh;
+    }
     @include atDesktop {
 
     transform-style: preserve-3d;
