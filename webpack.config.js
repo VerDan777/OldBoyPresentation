@@ -1,16 +1,32 @@
+const eslint = require('eslint-loader');
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const merge = require('webpack-merge');
+const pug = require('./webpack/pug.js');
+
+const Paths = {
+    src:path.join(__dirname,'src'),
+    dist:path.join(__dirname,'dist')
+}
 module.exports = {
-    entry: './src/js/app.js',
+    entry: Paths.src + '/js/app.js',
     output: {
+        path:Paths.dist,
         filename: 'app.js'
     },
-    module: {
-        loaders: [{
-            loader: 'babel-loader',
-            query: {
-                presets: ['es2015']
-            },
-            test: /\.js$/,
-            exclude: /node_modules/
-        }]
-    }
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Webpack app',
+            template:Paths.src +'/index.pug'
+        }),
+        ]
+   
+
 }
+      
+ 
+
+
+          
+    

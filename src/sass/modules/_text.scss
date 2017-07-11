@@ -1,317 +1,298 @@
 .text {
     text-align: center;
     &__title {
-
-       text-align: center;
-       font-family: 'Ubuntu',sans-serif;
-       display: inline-block;
-       font-size: 4rem;
-       color:white;
-       padding-bottom: 15px;
-       padding-top:15px;
-       @include atTabletsPortrait {
-
-
-       }
-
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        display: inline-block;
+        font-size: 4rem;
+        color: white;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        @include atTabletsPortrait {}
         &--why {
-        font-size: 3rem;
-        padding-top:100px;
-        color:white;
-        font-family: 'Ubuntu',sans-serif;
-    
+            font-size: 3rem;
+            padding-top: 100px;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
         }
-
         &--arrow {
             position: relative;
         }
-        
-       &--orange {
-           color:$accent;
-           font-size: 6rem;
-           margin:2% auto;
-       }
-       &--orangebg {
-           background: $accent;
-           color:#000000;
-           font-size: 2.5rem;
-       }
-       &--big {
-           font-size: 7rem;
-       }
-       &--bold {
-           font-size: 2.5rem;
-           @include atTabletsPortrait {
-               font-size: 5rem;
-           }
-       }
-       &--boldsubtitle {
-           font-size: 4rem;
-       }
-       &--left {
-           text-align: left;
-           font-size: 3.5rem;
-           font-weight: 200;
-       }
-       &--prim {
-           font-size: 2rem;
-           text-align: left;
-           padding-left: 80px;
-           @include atTabletsPortrait {
-               padding-left: 150px;
-               
-           }
-       }
-       &--underline {
-
-        &::after {
-            content: '';
-            height: 10px;
-            display: block;
-            width: 150px;
+        &--orange {
+            color: $accent;
+            font-size: 6rem;
+            margin: 2% auto;
+        }
+        &--orangebg {
             background: $accent;
-            margin: 15px auto;
-           
-       }
-
-    }
-    &--balance {
-        font-size:2.5rem;
-        
-
-        @include atTabletsPortrait {
+            color: #000000;
+            font-size: 2.5rem;
+        }
+        &--big {
+            font-size: 7rem;
+        }
+        &--bold {
+            font-size: 2.5rem;
+            @include atTabletsPortrait {
+                font-size: 5rem;
+            }
+        }
+        &--boldsubtitle {
             font-size: 4rem;
-            margin-left: 50px;
-            
-
+        }
+        &--left {
+            text-align: left;
+            font-size: 3.5rem;
+            font-weight: 200;
+        }
+        &--prim {
+            font-size: 2rem;
+            text-align: left;
+            padding-left: 15px;
+            @include atTabletsPortrait {
+                //    padding-left: 150px;
+            }
+        }
+        &--underline {
+            &::after {
+                content: '';
+                height: 10px;
+                display: block;
+                width: 150px;
+                background: $accent;
+                margin: 15px auto;
+            }
+        }
+        &--balance {
+            font-size: 2.5rem;
+            @include atTabletsPortrait {
+                font-size: 4rem;
+                margin-left: 50px;
+            }
+        }
+        &--strong {
+            color: $accent;
+            padding-top: 100px;
+            background: none;
+            font-weight: bold;
+            padding: 15px 0%;
+            margin-top: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 3rem;
+            text-align: center;
+            display: inline-block;
+            @include atTabletsPortrait {
+                margin-left: 200px;
+                margin-right: 150px;
+                font-size: 2rem;
+            }
+            @include atTabletsLandscape {
+                font-size: 3rem;
+            }
         }
     }
-    }
     &__text {
-
         // background-color:$accent;   
-        padding:15px 0%;
-        margin-top:20px;
-        font-family: 'Ubuntu',sans-serif;
+        padding: 15px 0%;
+        margin-top: 20px;
+        font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         font-size: 1.5rem;
         text-align: center;
         display: inline-block;
-        color:white;
+        color: white;
         @include atTabletsPortrait {
-
-        font-size: 3rem;
-
-
+            font-size: 3rem;
         }
         &--motto {
-            color:black;
+            color: black;
             background: $accent;
             font-size: 2rem;
             line-height: 2;
-            font-family: 'Ubuntu',sans-serif;
-            margin:35% auto;
+            font-family: 'Ubuntu', sans-serif;
+            margin: 35% auto;
             font-weight: bold;
-            
-           
             @include atTabletsPortrait {
                 font-size: 2.5rem;
                 padding-bottom: 25px;
-                padding-top:25px;
-
+                padding-top: 25px;
             }
-         
         }
-
-             &--why {
-        font-size: 3rem;
-        padding-top:100px;
-
-        
-       }
-       span {
-           background: $accent;
-           color:#000000;
-           font-weight: 100;
-       }
-       &--why--preference {
-           color:$accent;
-           font-size: 3.5rem;
-           padding-top:100px;
-           background: none;
-           font-weight: bold;
-       }
+        &--phone {
+            font-size: 2.5rem;
+        }
+        &--why {
+            font-size: 3rem;
+            padding-top: 100px;
+        }
+        span {
+            background: $accent;
+            color: #000000;
+            font-weight: 100;
+        }
+        &--why--preference {
+            color: $accent;
+            font-size: 3.5rem;
+            padding-top: 100px;
+            background: none;
+            font-weight: bold;
+        }
         &--left {
-           text-align: center;;
-           font-size: 1.5rem;
-           font-weight: 200;
-           @include atTabletsPortrait {
-
-               font-size: 2rem;
-
-           }
-       }
-       &--bg {
-           font-size: 2.5rem;
-           @include atTabletsPortrait {
-               font-size: 4rem;
-           }
-       }
-       &--balance {
-
-           @include atTabletsPortrait {
-
-            // margin-left: 250px;
-
-           }
-       }
-       
-       
-   
-    
+            text-align: center;
+            ;
+            font-size: 1.5rem;
+            font-weight: 200;
+            @include atTabletsPortrait {
+                font-size: 2rem;
+            }
+        }
+        &--bg {
+            font-size: 2.5rem;
+            @include atTabletsPortrait {
+                font-size: 4rem;
+            }
+        }
+        &--balance {
+            @include atTabletsPortrait {
+                // margin-left: 250px;
+            }
+        }
     }
-
-
 }
-h1 {
-        padding-top:50px;
-        padding-bottom: 50px;
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: bold;
-        color:white;
-        font-family: 'Ubuntu',sans-serif;
-        @include atTabletsPortrait {
 
-            font-size: 4rem;
-        }
-        @include atDesktop {
-            font-size: 4rem;
-        }
+h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    @include atTabletsPortrait {
+        font-size: 4rem;
+    }
+    @include atDesktop {
+        font-size: 4rem;
+    }
 }
 
 mark {
-       color:black;
-       background: $accent;
-        // color:#000000;
-        font-size: 1.5rem;
-        line-height: 2;
-        font-family: 'Ubuntu',sans-serif;
-        padding-bottom: 15px;
-        padding-top:15px;
-        margin:25% auto;
-        font-weight: bold;
-       
-        
-        @include atTabletsPortrait {
-            font-size: 2rem;
-            background: $accent;
-            padding: 0 10px;
-            margin:10% auto;
-        }
-        @include atTabletsLandscape {
-              padding: 0 15px;
-             letter-spacing: 3px;
-              
-        }
-        @include atDesktop {
-            margin:1% auto;
-        }
+    color: black;
+    background: $accent; // color:#000000;
+    font-size: 2rem;
+    line-height: 2;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px 25px; 
+
+    margin: 25% auto;
+    font-weight: bold;
+    @include atTabletsPortrait {
+        font-size: 2rem;
+        background: $accent;
+        padding: 0 10px;
+        margin: 10% auto;
+    }
+    @include atTabletsLandscape {
+        padding: 0 15px;
+        letter-spacing: 3px;
+    }
+    @include atDesktop {
+        margin: 1% auto;
+    }
 }
 
 p {
-       text-align: center;
-       font-family: 'Ubuntu',sans-serif;
-       display: inline-block;
-       font-size: 1.7rem;
-       color:white;
-       padding-bottom: 15px;
-    //    padding-top:100px;
-       width: 100%;
-
-       @include atTabletsPortrait {
-       margin-left: 10px;
-       margin-right: 55px;
-       font-size: 2.5rem;
-
-       }
-}
-h4 {
-       text-align: center;
-       font-family: 'Ubuntu',sans-serif;
-       display: inline-block;
-       font-size: 2.5rem;
-       color:white;
-       padding: 15px 15px;
-
-       @include atTabletsPortrait {
-           font-size: 4rem;
-       }
-
-}
-h5 {
-       text-align: center;
-       font-family: 'Ubuntu',sans-serif;
-       display: inline-block;
-       font-size: 4.5rem;
-       color:white;
-       padding: 15px 15px;
-       padding: 0;
-         margin:100px auto;
-
-       @include atTabletsPortrait {
-           font-size: 7rem;
-           margin-top:100px;
-       }
-}
-h2 {
-    color:white;
-    text-align:  center;
-    font-family: 'Ubuntu',sans-serif;
+    text-align:left;
+    font-family: 'Ubuntu', sans-serif;
     display: inline-block;
-    font-size: 6rem;
-    @include atDesktop {
-    font-size: 8rem;
-    letter-spacing: 3px;
-        
+    font-size: 2rem;
+    color: white;
+    line-height: 1.52;
+    margin: 0 25px;
+    padding-bottom: 15px; //    padding-top:100px;
+    max-width: 1000px;
+    @include atTabletsPortrait {
+        margin-left: 10px;
+        margin-right: 55px;
+        font-size: 2.5rem;
     }
-    
 }
-strong {
-        color:$accent;
-        padding-top:100px;
-        background: none;
-        font-weight: bold;
-        padding:15px 0%;
-        margin-top:20px;
-        font-family: 'Ubuntu',sans-serif;
-        font-weight: bold;
-        font-size: 2rem;
-        text-align: center;
-        display: inline-block;
-        @include atTabletsPortrait {
 
-        margin-left: 200px; 
-        margin-right:150px;
+h4 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: white;
+    padding: 15px 15px;
+    @include atTabletsPortrait {
+        font-size: 4rem;
+    }
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    font-size: 4.5rem;
+    color: white;
+    padding: 15px 15px;
+    padding: 0;
+    margin: 100px auto;
+    @include atTabletsPortrait {
+        font-size: 7rem;
+        margin-top: 100px;
+    }
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    font-size: 2.8rem;
+    padding-bottom: 50px;
+    @include atTabletsPortrait {
+        font-size: 5rem;
+    }
+    @include atDesktop {
+        font-size: 8rem;
+        letter-spacing: 3px;
+        margin: 0 auto;
+    }
+}
+
+strong {
+    color: $accent;
+    padding-top: 100px;
+    background: none;
+    font-weight: bold;
+    padding: 15px 0%;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    @include atTabletsPortrait {
+        margin-left: 200px;
+        margin-right: 150px;
         font-size: 2rem;
-        }
-        @include atTabletsLandscape {
-            font-size: 3rem;
-        }
-    
+    }
+    @include atTabletsLandscape {
+        font-size: 3rem;
+    }
 }
 
 sub {
-
-    color:white;
+    color: white;
     font-size: 2.65rem;
     font-weight: 200;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-align: left;
     display: inline-block;
     padding-bottom: 15px;
-    padding-top:15px;
-    // padding: 15px 10px;
+    padding-top: 15px; // padding: 15px 10px;
     margin: 0 35px;
-
 }

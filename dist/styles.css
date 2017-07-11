@@ -432,7 +432,8 @@ ul {
       transform-style: preserve-3d;
       height: 110vh; } }
   .section--color {
-    background: #161620; }
+    background: #161620;
+    max-height: 150vh; }
 
 .header {
   height: 100%;
@@ -456,7 +457,7 @@ ul {
   text-align: center; }
   .text__title {
     text-align: center;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: inline-block;
     font-size: 4rem;
     color: white;
@@ -466,7 +467,7 @@ ul {
       font-size: 3rem;
       padding-top: 100px;
       color: white;
-      font-family: 'Ubuntu',sans-serif; }
+      font-family: 'Ubuntu', sans-serif; }
     .text__title--arrow {
       position: relative; }
     .text__title--orange {
@@ -493,10 +494,7 @@ ul {
     .text__title--prim {
       font-size: 2rem;
       text-align: left;
-      padding-left: 80px; }
-      @media (min-width: 700px) {
-        .text__title--prim {
-          padding-left: 150px; } }
+      padding-left: 15px; }
     .text__title--underline::after {
       content: '';
       height: 10px;
@@ -510,10 +508,30 @@ ul {
         .text__title--balance {
           font-size: 4rem;
           margin-left: 50px; } }
+    .text__title--strong {
+      color: #ff9800;
+      padding-top: 100px;
+      background: none;
+      font-weight: bold;
+      padding: 15px 0%;
+      margin-top: 20px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+      display: inline-block; }
+      @media (min-width: 700px) {
+        .text__title--strong {
+          margin-left: 200px;
+          margin-right: 150px;
+          font-size: 2rem; } }
+      @media (min-width: 900px) {
+        .text__title--strong {
+          font-size: 3rem; } }
   .text__text {
     padding: 15px 0%;
     margin-top: 20px;
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
@@ -527,7 +545,7 @@ ul {
       background: #ff9800;
       font-size: 2rem;
       line-height: 2;
-      font-family: 'Ubuntu',sans-serif;
+      font-family: 'Ubuntu', sans-serif;
       margin: 35% auto;
       font-weight: bold; }
       @media (min-width: 700px) {
@@ -535,6 +553,8 @@ ul {
           font-size: 2.5rem;
           padding-bottom: 25px;
           padding-top: 25px; } }
+    .text__text--phone {
+      font-size: 2.5rem; }
     .text__text--why {
       font-size: 3rem;
       padding-top: 100px; }
@@ -568,7 +588,7 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  font-family: 'Ubuntu',sans-serif; }
+  font-family: 'Ubuntu', sans-serif; }
   @media (min-width: 700px) {
     h1 {
       font-size: 4rem; } }
@@ -579,11 +599,10 @@ h1 {
 mark {
   color: black;
   background: #ff9800;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 2;
-  font-family: 'Ubuntu',sans-serif;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 15px 25px;
   margin: 25% auto;
   font-weight: bold; }
   @media (min-width: 700px) {
@@ -601,13 +620,15 @@ mark {
       margin: 1% auto; } }
 
 p {
-  text-align: center;
-  font-family: 'Ubuntu',sans-serif;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
   display: inline-block;
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: white;
+  line-height: 1.52;
+  margin: 0 25px;
   padding-bottom: 15px;
-  width: 100%; }
+  max-width: 1000px; }
   @media (min-width: 700px) {
     p {
       margin-left: 10px;
@@ -616,9 +637,9 @@ p {
 
 h4 {
   text-align: center;
-  font-family: 'Ubuntu',sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: white;
   padding: 15px 15px; }
   @media (min-width: 700px) {
@@ -627,7 +648,7 @@ h4 {
 
 h5 {
   text-align: center;
-  font-family: 'Ubuntu',sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   display: inline-block;
   font-size: 4.5rem;
   color: white;
@@ -642,13 +663,18 @@ h5 {
 h2 {
   color: white;
   text-align: center;
-  font-family: 'Ubuntu',sans-serif;
-  display: inline-block;
-  font-size: 6rem; }
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+  font-size: 2.8rem;
+  padding-bottom: 50px; }
+  @media (min-width: 700px) {
+    h2 {
+      font-size: 5rem; } }
   @media (min-width: 1200px) {
     h2 {
       font-size: 8rem;
-      letter-spacing: 3px; } }
+      letter-spacing: 3px;
+      margin: 0 auto; } }
 
 strong {
   color: #ff9800;
@@ -657,7 +683,7 @@ strong {
   font-weight: bold;
   padding: 15px 0%;
   margin-top: 20px;
-  font-family: 'Ubuntu',sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
@@ -675,7 +701,7 @@ sub {
   color: white;
   font-size: 2.65rem;
   font-weight: 200;
-  font-family: 'Ubuntu',sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   text-align: left;
   display: inline-block;
   padding-bottom: 15px;
@@ -1070,9 +1096,14 @@ sub {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+  height: 100%; }
   .gallery__img {
-    max-width: 100%; }
+    display: flex;
+    max-width: 100%;
+    padding: 0 10px; }
 
 .advantages {
   background-image: url("./img/advantagesbg.jpg");
@@ -1162,8 +1193,13 @@ sub {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 50% auto;
   display: block; }
+  @media (min-width: 700px) {
+    .content {
+      margin: 0 auto; } }
+  .content--gallery {
+    margin: 0 auto; }
 
 .parallax {
   perspective: 1px;
@@ -1194,10 +1230,8 @@ sub {
 .barbershop-feature {
   text-align: left; }
   .barbershop-feature__list {
+    list-style-image: url("./img/features/docsfeature.png");
     text-align: center; }
-    @media (min-width: 700px) {
-      .barbershop-feature__list {
-        margin-left: 175px; } }
   .barbershop-feature__item {
     display: inline-block;
     font-family: 'Ubuntu',sans-serif;
@@ -1205,7 +1239,7 @@ sub {
     font-weight: 100;
     color: white;
     position: relative;
-    margin: 20px 0; }
+    margin: 20px 50px; }
   .barbershop-feature__img {
     position: absolute;
     width: 80px;
@@ -1227,12 +1261,14 @@ sub {
 .img {
   display: inline-block;
   width: 50%; }
+  .img--full {
+    min-width: 100%; }
   .img__bg {
     position: relative;
     object-fit: cover;
     width: 100%;
     min-height: 170vh;
-    filter: brightness(45%); }
+    filter: brightness(20%); }
     .img__bg::after {
       content: '';
       position: absolute;

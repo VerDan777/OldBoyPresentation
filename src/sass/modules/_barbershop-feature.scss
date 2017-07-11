@@ -2,10 +2,10 @@
     text-align: left;
     &__list {
         
-    
+        list-style-image: url('./img/features/docsfeature.png');
          text-align: center;
          @include atTabletsPortrait {
-             margin-left:175px;
+            //  margin-left:175px;
          }
     }
     &__item {
@@ -15,7 +15,7 @@
         font-weight: 100;
         color:white;
         position: relative;
-        margin: 20px 0;
+        margin: 20px 50px;
         
     }
     &__img {

@@ -1,6 +1,13 @@
 .img {
     display: inline-block;
     width: 50%;
+    &--full {
+        min-width: 100%;
+    }
+    @include atTabletsLandscape {
+        // width: calc(50%-4px);
+    }
+    
 
     &__bg {
     
@@ -8,7 +15,7 @@
     object-fit: cover;
     width: 100%;
     min-height: 170vh;
-    filter: brightness(45%);
+    filter: brightness(20%);
     &::after {
         content:'';
         position: absolute;
