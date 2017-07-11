@@ -1,3 +1,3 @@
-import Parallax from './modules/parallax.js';
+// import Parallax from './modules/parallax.js';
 
-const parallax = new Parallax();
+// const parallax = new Parallax();

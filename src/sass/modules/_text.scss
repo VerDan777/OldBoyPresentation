@@ -56,7 +56,11 @@
        &--prim {
            font-size: 2rem;
            text-align: left;
-           margin-top: 15px; 
+           padding-left: 80px;
+           @include atTabletsPortrait {
+               padding-left: 150px;
+               
+           }
        }
        &--underline {
 
@@ -99,6 +103,24 @@
         font-size: 3rem;
 
 
+        }
+        &--motto {
+            color:black;
+            background: $accent;
+            font-size: 2rem;
+            line-height: 2;
+            font-family: 'Ubuntu',sans-serif;
+            margin:35% auto;
+            font-weight: bold;
+            
+           
+            @include atTabletsPortrait {
+                font-size: 2.5rem;
+                padding-bottom: 25px;
+                padding-top:25px;
+
+            }
+         
         }
 
              &--why {
@@ -153,6 +175,7 @@
 }
 h1 {
         padding-top:50px;
+        padding-bottom: 50px;
         text-align: center;
         font-size: 2.5rem;
         font-weight: bold;
@@ -163,7 +186,7 @@ h1 {
             font-size: 4rem;
         }
         @include atDesktop {
-            font-size: 3.5rem;
+            font-size: 4rem;
         }
 }
 
@@ -172,22 +195,24 @@ mark {
        background: $accent;
         // color:#000000;
         font-size: 1.5rem;
-        line-height: 1.52;
+        line-height: 2;
         font-family: 'Ubuntu',sans-serif;
         padding-bottom: 15px;
         padding-top:15px;
-        margin:20% auto;
+        margin:25% auto;
         font-weight: bold;
+       
         
         @include atTabletsPortrait {
             font-size: 2rem;
             background: $accent;
-            color:#000000;
-            padding: 0 5px;
+            padding: 0 10px;
             margin:10% auto;
         }
         @include atTabletsLandscape {
               padding: 0 15px;
+             letter-spacing: 3px;
+              
         }
         @include atDesktop {
             margin:1% auto;
@@ -198,10 +223,10 @@ p {
        text-align: center;
        font-family: 'Ubuntu',sans-serif;
        display: inline-block;
-       font-size: 1.5rem;
+       font-size: 1.7rem;
        color:white;
        padding-bottom: 15px;
-       padding-top:100px;  
+    //    padding-top:100px;
        width: 100%;
 
        @include atTabletsPortrait {
@@ -224,14 +249,30 @@ h4 {
        }
 
 }
+h5 {
+       text-align: center;
+       font-family: 'Ubuntu',sans-serif;
+       display: inline-block;
+       font-size: 4.5rem;
+       color:white;
+       padding: 15px 15px;
+       padding: 0;
+         margin:100px auto;
+
+       @include atTabletsPortrait {
+           font-size: 7rem;
+           margin-top:100px;
+       }
+}
 h2 {
     color:white;
     text-align:  center;
     font-family: 'Ubuntu',sans-serif;
     display: inline-block;
-    font-size: 4rem;
-    @include atDesktop {
     font-size: 6rem;
+    @include atDesktop {
+    font-size: 8rem;
+    letter-spacing: 3px;
         
     }
     

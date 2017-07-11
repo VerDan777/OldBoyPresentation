@@ -3,10 +3,23 @@
     width: 50%;
 
     &__bg {
-
+    
+    position: relative;
     object-fit: cover;
     width: 100%;
     min-height: 170vh;
+    filter: brightness(45%);
+    &::after {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        display: block;
+        opacity: 0.5;
+        height: 100%;
+    }
 
      &-parallax-back {
         transform: translateZ(0px);
