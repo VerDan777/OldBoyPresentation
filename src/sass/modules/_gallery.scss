@@ -1,16 +1,13 @@
 .gallery {
-
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    // margin-bottom: 100px;
+    flex-direction: row; // margin-bottom: 100px;
     justify-content: space-between;
-    margin:10px 0px;
-    height:100%;
-
+    margin: 10px 0px;
+    height: 100%;
     &__img {
         display: flex;
         max-width: 100%;
         padding: 0 10px;
-}
+    }
 }

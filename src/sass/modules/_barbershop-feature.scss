@@ -1,22 +1,26 @@
 .barbershop-feature {
     text-align: left;
     &__list {
-        
         list-style-image: url('./img/features/docsfeature.png');
-         text-align: center;
-         @include atTabletsPortrait {
-            //  margin-left:175px;
-         }
+        text-align: left;
+        @include atTabletsPortrait {
+            text-align: center;
+        }
     }
     &__item {
         display: inline-block;
-        font-family: 'Ubuntu',sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         font-size: 1.5rem;
         font-weight: 100;
-        color:white;
+        color: white;
         position: relative;
-        margin: 20px 50px;
-        
+        margin: 20px 0px;
+    }
+    &__text {
+        font-size: 1rem;
+        padding-top: 20px;
+        text-align: left;
+        margin: 0 0;
     }
     &__img {
         position: absolute;
@@ -25,8 +29,8 @@
     }
     span {
         background: $accent;
-        color:#000000;
+        color: #000000;
         font-weight: 100;
-        padding:10px 10px;
+        padding: 10px 10px;
     }
 }

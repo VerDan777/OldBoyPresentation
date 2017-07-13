@@ -2,39 +2,28 @@
     position: relative;
     text-align: center;
     height: 170vh;
-
     @include atTabletsLandscape {
         height: 110vh;
     }
     @include atDesktop {
-
-    transform-style: preserve-3d;
-    height: 110vh;
-
+        transform-style: preserve-3d;
+        height: 110vh;
     }
-
     &--color {
         background: #161620;
-        max-height:150vh;
+        max-height: 150vh;
     }
     img {
-
-
-    // object-fit: cover;
-    // min-width: 100%;
-    // min-height: 100vh;
-    // position: absolute;
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
-    // z-index: 1;
-    // transform: translateZ(-1px) scale(2.1);
-    // background:rgba(0,0,0,0.5); 
-
-
+        // object-fit: cover;
+        // min-width: 100%;
+        // min-height: 100vh;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        // z-index: 1;
+        // transform: translateZ(-1px) scale(2.1);
+        // background:rgba(0,0,0,0.5); 
+    }
 }
-
-}
-
-

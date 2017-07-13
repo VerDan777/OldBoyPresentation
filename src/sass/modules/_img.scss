@@ -7,39 +7,32 @@
     @include atTabletsLandscape {
         // width: calc(50%-4px);
     }
-    
-
     &__bg {
-    
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    min-height: 170vh;
-    filter: brightness(20%);
-    &::after {
-        content:'';
-        position: absolute;
-        top: 0;
-        left: 0; 
+        position: relative;
+        object-fit: cover;
         width: 100%;
-        background-color: rgba(0,0,0,0.2);
-        display: block;
-        opacity: 0.5;
-        height: 100%;
-    }
-
-     &-parallax-back {
-        transform: translateZ(0px);
-      
-    }
-    &-parallax-front {
-        transform: translateZ(-1px) scale(2.1);
-    }
-
-    @include atTabletsLandscape {
-        min-height: 130vh;
-    }
-
+        min-height: 170vh;
+        filter: brightness(20%);
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: block;
+            opacity: 0.5;
+            height: 100%;
+        }
+        &-parallax-back {
+            transform: translateZ(0px);
+        }
+        &-parallax-front {
+            transform: translateZ(-1px) scale(2.1);
+        }
+        @include atTabletsLandscape {
+            min-height: 130vh;
+        }
     }
     img {
         display: inline-block;
